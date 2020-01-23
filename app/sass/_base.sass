@@ -1,0 +1,108 @@
+@import "fonts"
+
+//----------------------fonts---------------------
+$fonts: 'Roboto', sans-serif
+$title: 'DIN 2014', sans-serif
+//---------------------end-fonts---------------------
+
+//----------------------color---------------------
+$accent: #DD4E6A
+$text: #1D2025
+
+$accent-lite: #FF9C9C
+$bg: #DBD3D2
+
+//---------------------end-color---------------------
+
+body
+	overflow-x: hidden
+	position: relative
+	min-width: 320px
+	font-family: $fonts
+	font-display: swap
+	font-size: 16px
+	color: $text
+	line-height: 1.4
+	font-weight: 400
+
+::selection
+	background-color: $accent
+	color: #fff
+
+a, div, ul, li, input, textarea
+	&:hover,
+	&:focus
+		outline: none
+
+h1, h2, h3, h4, h5, h6
+	font-weight: 600
+	line-height: 1.2
+	margin: 0
+	padding: 0
+	font-family: $title
+
+a
+	color: $text
+	transition: all .6s
+
+	&:hover,
+	&:focus
+		color: $text
+
+svg
+	transition: all .6s
+
+g, path
+	opacity: 1
+	fill: #fff
+	transition: all .6s
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+sub, sup
+	font-size: 60%
+
+
+b, strong
+	font-weight: 700
+
+p
+	margin: 0
+	padding: 0
+
+a,
+a:focus,
+a:hover
+	outline: none
+	text-decoration: none
+	transition: all .6s
+
+button,
+button:focus,
+button:hover
+	outline: none
+	text-decoration: none
+	transition: all .6s
+
+
+.no-scroll
+	overflow: hidden
+
+
+.container
+	position: relative
+	max-width: 1235px
+	width: 100%
+	margin: 0 auto
+	padding: 0 15px
+
+
+.main
+	overflow: hidden
+
+
+@import "_base/btn"
+@import "_base/form"

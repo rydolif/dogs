@@ -1,0 +1,118 @@
+
+.menu
+	padding: 
+		top: 25px
+		bottom: 50px
+
+	&__container
+		display: flex
+
+	&__nav
+		position: relative
+		margin-top: -105px
+		background-color: #fff
+		padding:
+			top: 105px
+			right: 110px
+
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			right: 100%
+			bottom: 0
+			width: 500%
+			background-color: #fff
+
+		&_title
+			color: $accent
+			text-transform: uppercase
+			margin-bottom: 40px
+			letter-spacing: 0.1em
+			font-weight: 600
+
+		ul
+			font-family: $title
+
+		li
+			margin-bottom: 15px
+
+			&:last-child
+				margin-bottom: 0
+			
+
+		a
+			white-space: nowrap
+
+			&:hover,
+			&:focus
+				color: $accent
+
+		b
+			color: $accent
+			margin-right: 20px
+			font-size: 12px
+
+	&__form
+		background-color: $bg
+		display: flex
+		justify-content: space-between
+		width: 100%
+
+		&_wrap
+			padding: 50px 40px
+			width: 66%
+
+		h3
+			margin-bottom: 25px
+
+		&_sub-title
+			margin-bottom: 45px
+
+		&_line
+			display: flex
+			justify-content: space-between
+			margin-bottom: 25px
+
+		button
+			background-color: transparent
+			border: none
+			text-transform: uppercase
+			color: $accent
+			border-bottom: 1px solid #fff
+			letter-spacing: 0.1em
+			font-weight: 500
+			outline: none
+
+			&:hover,
+			&:focus
+				color: #fff
+				background-color: $accent
+				border-color: $accent
+
+		&_policy
+			font-size: 12px
+
+			a
+				color: $accent
+
+				&:hover,
+				&:focus
+					text-decoration: underline
+
+
+		&_sale
+			display: flex
+			align-items: flex-end
+			color: #fff
+			background-image: url(../img/menu__form_sale.jpg)
+			background-position: center
+			background-size: cover
+			padding:
+				left: 25px
+				right: 25px
+				bottom: 45px
+			width: 34%
+
+			

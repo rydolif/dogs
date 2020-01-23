@@ -1,0 +1,33 @@
+// font-weight helper:
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('woff2')
+
+
+@include font('Roboto', normal, 900, '../fonts/Roboto/Roboto-Black.woff2')
+@include font('Roboto', normal, 700, '../fonts/Roboto/Roboto-Bold.woff2')
+@include font('Roboto', normal, 500, '../fonts/Roboto/Roboto-Medium.woff2')
+@include font('Roboto', normal, 400, '../fonts/Roboto/Roboto-Regular.woff2')
+@include font('Roboto', normal, 300, '../fonts/Roboto/Roboto-Light.woff2')
+@include font('Roboto', normal, 200, '../fonts/Roboto/Roboto-Thin.woff2')
+
+
+@include font('DIN2014', normal, 800, '../fonts/DIN2014/DIN2014-ExtraBold.woff2')
+@include font('DIN2014', normal, 700, '../fonts/DIN2014/DIN2014-Bold.woff2')
+@include font('DIN2014', normal, 500, '../fonts/DIN2014/DIN2014-DemiBold.woff2')
+@include font('DIN2014', normal, 400, '../fonts/DIN2014/DIN2014-Regular.woff2')
+@include font('DIN2014', normal, 300, '../fonts/DIN2014/DIN2014-Light.woff2')
+@include font('DIN2014', normal, 200, '../fonts/DIN2014/DIN2014-ExtraLight.woff2')
