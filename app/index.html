@@ -20,6 +20,11 @@
 	<header class="header" id="header">
 		<div class="header__container container">
 
+			<button class="hamburger" type="button">
+				<span class="hamburger__box">
+					<span class="hamburger__item"></span>
+				</span>
+			</button>
 
 			<a href="#" class="header__logo">
 				<img src="img/header__logo.svg" alt="">
@@ -30,8 +35,10 @@
 					<li><a href="#">О школе</a></li>
 					<li><a href="#">Обучение</a></li>
 					<li><a href="#">Отзывы</a></li>
-					<li><a href="#">Блог
-						<svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg"><g><path d="M11 0H6L11 5V0Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.29297 5.29297L9.29297 0.292969L10.7072 1.70718L5.70718 6.70718L4.29297 5.29297Z"/><path d="M0 3H2V11H0V3Z"/><path d="M8 9L8 11L-8.74228e-08 11L0 9L8 9Z"/></g></svg></a>
+					<li>
+						<a href="#">Блог
+							<svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg"><g><path d="M11 0H6L11 5V0Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.29297 5.29297L9.29297 0.292969L10.7072 1.70718L5.70718 6.70718L4.29297 5.29297Z"/><path d="M0 3H2V11H0V3Z"/><path d="M8 9L8 11L-8.74228e-08 11L0 9L8 9Z"/></g></svg>
+						</a>
 					</li>
 					<li><span></span></li>
 					<li><a href="#">Мои курсы</a></li>
@@ -40,10 +47,14 @@
 
 			<div class="header__info">
 				<a href="tel:+79818308696" class="header__info_tel">+7 (981) 830-86-96</a>
-				<a href="mailto:mail.gmail.com" class="header__info_mail">
-					<svg width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg"><path d="M13.6641 7.8125C13.6068 9.14583 13.276 10.2057 12.6719 10.9922C12.0729 11.7734 11.2656 12.1641 10.25 12.1641C9.80208 12.1641 9.41406 12.0677 9.08594 11.875C8.76302 11.6823 8.51823 11.4062 8.35156 11.0469C7.83073 11.776 7.15104 12.1406 6.3125 12.1406C5.55208 12.1406 4.96354 11.8203 4.54688 11.1797C4.13021 10.5391 3.97396 9.69271 4.07812 8.64062C4.17188 7.78125 4.38802 7.01823 4.72656 6.35156C5.07031 5.67969 5.5026 5.16406 6.02344 4.80469C6.54427 4.44531 7.10677 4.26562 7.71094 4.26562C8.45573 4.26562 9.09115 4.4375 9.61719 4.78125L10.1094 5.11719L9.71094 9.63281C9.65885 10.0443 9.70312 10.3594 9.84375 10.5781C9.98958 10.7969 10.2188 10.9062 10.5312 10.9062C11.0104 10.9062 11.4115 10.6276 11.7344 10.0703C12.0573 9.50781 12.2344 8.77344 12.2656 7.86719C12.3542 6.04948 11.987 4.65365 11.1641 3.67969C10.3464 2.70052 9.13281 2.21094 7.52344 2.21094C6.51823 2.21094 5.6224 2.46615 4.83594 2.97656C4.04948 3.48698 3.42969 4.21354 2.97656 5.15625C2.52344 6.09375 2.26823 7.16927 2.21094 8.38281C2.1276 10.2266 2.4974 11.651 3.32031 12.6562C4.14323 13.6667 5.375 14.1719 7.01562 14.1719C7.44792 14.1719 7.90104 14.1224 8.375 14.0234C8.84896 13.9297 9.25781 13.8021 9.60156 13.6406L9.89844 14.8438C9.58073 15.0521 9.15104 15.2188 8.60938 15.3438C8.07292 15.474 7.53125 15.5391 6.98438 15.5391C5.60938 15.5391 4.4375 15.2604 3.46875 14.7031C2.5 14.151 1.77604 13.3333 1.29688 12.25C0.822917 11.1719 0.617188 9.88281 0.679688 8.38281C0.742188 6.94531 1.07031 5.65625 1.66406 4.51562C2.25781 3.375 3.0651 2.49479 4.08594 1.875C5.11198 1.25 6.26823 0.9375 7.55469 0.9375C8.86198 0.9375 9.98698 1.21875 10.9297 1.78125C11.8724 2.33854 12.5781 3.13802 13.0469 4.17969C13.5156 5.22135 13.7214 6.43229 13.6641 7.8125ZM5.8125 8.64062C5.75521 9.32812 5.8151 9.85156 5.99219 10.2109C6.16927 10.5651 6.45573 10.7422 6.85156 10.7422C7.10677 10.7422 7.34896 10.6302 7.57812 10.4062C7.80729 10.1823 7.9974 9.85938 8.14844 9.4375L8.47656 5.74219C8.27344 5.67448 8.0651 5.64062 7.85156 5.64062C7.2526 5.64062 6.78646 5.89583 6.45312 6.40625C6.125 6.91667 5.91146 7.66146 5.8125 8.64062Z"/>
-					</svg>
-				</a>
+				<div class="header__info_mail">
+					<img src="img/header__mail.svg" alt="">
+					<ul>
+						<li><a href="#" target="_blank"><img src="img/header__vk.svg" alt="">ФанДогс Вконтакте</a></li>
+						<li><a href="#" target="_blank"><img src="img/header__you.svg" alt="">Канал на YouTube</a></li>
+						<li><a href="#" target="_blank"><img src="img/header__in.svg" alt="">Instagram</a></li>
+					</ul>
+				</div>
 			</div>
 
 			
@@ -65,6 +76,8 @@
 				</div>
 
 			</div>
+
+			<img src="img/hero__decor.png" alt="" class="hero__decor">
 		</section>
 
 		<section class="menu" id="menu">
@@ -73,11 +86,11 @@
 				<nav class="menu__nav">
 					<p class="menu__nav_title">На этой странице</p>
 					<ul>
-						<li><b>01</b><a href="#">Преимущества школы</a></li>
-						<li><b>02</b><a href="#">Формат обучения</a></li>
-						<li><b>03</b><a href="#">О преподавателе</a></li>
-						<li><b>04</b><a href="#">Ответы на вопросы</a></li>
-						<li><b>05</b><a href="#">Отзывы</a></li>
+						<li><b>01</b><a href="#one">Преимущества школы</a></li>
+						<li><b>02</b><a href="#two">Формат обучения</a></li>
+						<li><b>03</b><a href="#three">О преподавателе</a></li>
+						<li><b>04</b><a href="#four">Ответы на вопросы</a></li>
+						<li><b>05</b><a href="#five">Отзывы</a></li>
 					</ul>
 				</nav>
 
@@ -89,11 +102,11 @@
 
 						<p class="menu__form_sub-title">
 							Новости школы, полезные статьи
-							<br>обучающие видео в вашей почте
+							<br>и обучающие видео в вашей почте
 						</p>
 
 						<div class="menu__form_line">
-							<input type="text" placeholder="Ваш email">
+							<input type="email" placeholder="Ваш email">
 							<button>Подписаться</button>
 						</div>
 
@@ -108,8 +121,645 @@
 							<br><b>«Прогулки без проблем»</b>
 						</p>
 					</div>
-
 				</form>
+
+			</div>
+		</section>
+
+		<section class="training" id="one">
+
+			<div class="training__navigation navigation">
+				<ul>
+					<li><a href="#menu">
+						<svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M9.192 4.568L4.956 0.331999L0.72 4.568V5.888L4.488 2.12V9.392H5.424V2.12L9.192 5.888V4.568Z"/></svg>
+					</a></li>
+					<li>
+						<a href="#one" class="navigation__active">
+							<b>01</b>
+							<span>Преимущества школы</span>
+						</a>
+					</li>
+					<li>
+						<a href="#two">
+							<b>02</b>
+						</a>
+					</li>
+					<li>
+						<a href="#three">
+							<b>03</b>
+						</a>
+					</li>
+					<li>
+						<a href="#four">
+							<b>04</b>
+						</a>
+					</li>
+					<li>
+						<a href="#five">
+							<b>05</b>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="training__container container">
+
+				<h2>
+					Обучение дрессировке онлайн возможно!
+					<br> Если к процессу дрессировки подойти с правильной
+					<br> стороны — со стороны обучения владельца.
+				</h2>
+
+				<div class="training__list">
+
+					<div class="training__list_item">
+						<img src="img/training__item1.svg" alt="">
+						<h3>Индивидуальный подход</h3>
+						<p>
+							Каждая собака требует тщательно проработанной системы обучения. Тренер работает совместно с хозяином, решая уникальные проблемы его собаки. 
+						</p>
+					</div>
+
+					<div class="training__list_item">
+						<img src="img/training__item2.svg" alt="">
+						<h3>Взаимоотношения с питомцем</h3>
+						<p>
+							Занятия направлены на улучшение контакта собаки и владельца. Вы станете доброжелательным лидером, достойным доверия.
+						</p>
+					</div>
+
+					<div class="training__list_item">
+						<img src="img/training__item3.svg" alt="">
+						<h3>Отличная репутация</h3>
+						<p>
+							Онлайн-курс по обучению дрессировке ФанДогс существует уже более трех лет, он собрал больше 100 пар из разных точек России и всего мира.
+						</p>
+					</div>
+				</div>
+
+				<div class="training__start">
+					<p>
+						Вы можете начать заниматься с собакой любой породы
+						<br> и возраста. Наши курсы и вебинары направлены на обучение
+						<br> не собаки, а ее владельца. Понимание принципов дрессировки
+						<br> даст вам возможность самому научить собаку любым
+						<br> необходимым навыкам.
+					</p>
+					<a href="#" class="btn">Начать обучение</a>
+				</div>
+
+				<div class="training__article">
+
+					<div class="training__article_item">
+						<img src="img/training__article1.jpg" alt="">
+						<div class="training__article_hover">
+							<div>
+								<p class="training__article_label">Старт Курса 5 мая</p>
+								<h3>Базовый — продвинутый</h3>
+								<p class="training__article_text">
+									Игры с собаками, их значение. Что важно знать и уметь, играя с собакой. 
+									<br>2 часа + ответы на вопросы.
+								</p>
+							</div>
+							<div>
+								<p class="training__article_price">1500 <span>руб.</span></p>
+								<a href="#" class="btn btn--transparent">Подробнее</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="training__article_item">
+						<img src="img/training__article2.jpg" alt="">
+						<div class="training__article_hover">
+							<div>
+								<p class="training__article_label">Старт Курса 5 мая</p>
+								<h3>Базовый — продвинутый</h3>
+								<p class="training__article_text">
+									Игры с собаками, их значение. Что важно знать и уметь, играя с собакой. 
+									<br>2 часа + ответы на вопросы.
+								</p>
+							</div>
+							<div>
+								<p class="training__article_price">1500 <span>руб.</span></p>
+								<a href="#" class="btn btn--transparent">Подробнее</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="training__article_item">
+						<img src="img/training__article3.jpg" alt="">
+						<div class="training__article_hover">
+							<div>
+								<p class="training__article_label">Старт Курса 5 мая</p>
+								<h3>Базовый — продвинутый</h3>
+								<p class="training__article_text">
+									Игры с собаками, их значение. Что важно знать и уметь, играя с собакой. 
+									<br>2 часа + ответы на вопросы.
+								</p>
+							</div>
+							<div>
+								<p class="training__article_price">1500 <span>руб.</span></p>
+								<a href="#" class="btn btn--transparent">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="format" id="two">
+
+			<div class="navigation">
+				<ul>
+					<li><a href="#menu">
+						<svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M9.192 4.568L4.956 0.331999L0.72 4.568V5.888L4.488 2.12V9.392H5.424V2.12L9.192 5.888V4.568Z"/></svg>
+					</a></li>
+					<li>
+						<a href="#one">
+							<b>01</b>
+						</a>
+					</li>
+					<li>
+						<a href="#two" class="navigation__active">
+							<b>02</b>
+							<span>Формат обучения</span>
+						</a>
+					</li>
+					<li>
+						<a href="#three">
+							<b>03</b>
+						</a>
+					</li>
+					<li>
+						<a href="#four">
+							<b>04</b>
+						</a>
+					</li>
+					<li>
+						<a href="#five">
+							<b>05</b>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="format__container container">
+
+				<h2>
+					Мы работаем с собаками всех возрастов и пород.
+					<br> Во время занятий не применяется физическое насилие,
+					<br> наказания и механическая коррекция.
+				</h2>
+
+				<div class="format__list">
+					<div class="format__step">
+						<img src="img/format__step1.svg" alt="">
+						<p>
+							<b class="format__step_number">01</b>
+							Перед началом курса вы рассказываете о задачах,
+							<br> которые хотите выполнить и проблемах, требующих решения.
+							<br> Преподаватель попросит вас загрузить несколько
+							<br> видеороликов, где будет видно, как ведет себя собака
+							<br> в различных ситуациях.
+						</p>
+					</div>
+				</div>
+
+				<div class="format__list">
+					<div class="format__step">
+						<p>
+							<b class="format__step_number">02</b>
+							В зависимости от особенностей вашей собаки, вам будет предложен набор рекомендаций по взаимодействию c ней и режиму тренировок. 
+						</p>
+					</div>
+				</div>
+
+				<div class="format__list format__list--right">
+					<div class="format__step">
+						<p>
+							<b class="format__step_number">03</b>
+							Каждая неделя посвящена какой-то одной задаче. Вам будет предложен набор материалов и упражнений по теме, а также даны рекомендации по выполнению домашнего задания.
+						</p>
+					</div>
+				</div>
+
+				<div class="format__list">
+					<div class="format__step">
+						<p>
+							<b class="format__step_number">04</b>
+							Вы занимаетесь с собакой ежедневно, учитывая индивидуальные рекомендации. В зависимости от задания, занятия могут проходить дома или на улице. Обычно рекомендуется делать несколько коротких тренировочных сессий в течение дня.
+						</p>
+					</div>
+				</div>
+
+				<div class="format__list format__list--right">
+					<div class="format__step">
+						<p>
+							<b class="format__step_number">05</b>
+							Всю неделю преподаватель следит за вашим прогрессом, корректирует вашу работу, отвечает на вопросы. Также вы можете общаться с другими участниками курса.
+						</p>
+					</div>
+				</div>
+
+				<div class="format__list">
+					<div class="format__step">
+						<p>
+							<b class="format__step_number">06</b>
+							В конце недели вы снимаете видео, где показываете, чему научились вместе со своей собакой, и загружаете его на учебный сайт. Преподаватель разбирает ваше задание, отмечает успехи, поправляет ошибки, и дает рекомендации для дальнейшей работы. 
+						</p>
+						<img src="img/format__step2.svg" alt="">
+					</div>
+				</div>
+
+				<p class="format__description">
+					Основная идея методики — это обучение человека
+					<br> дрессировке собак. После окончания курса вы получите
+					<br> знания, чтобы продолжать работу самостоятельно.
+				</p>
+
+				<div class="format__must">
+					<h3>Для занятий вам понадобится</h3>
+					<div class="format__must_item">
+						<img src="img/format__must1.svg" alt="">
+						<p>
+							Мягкий ошейник и поводок длиной 5-7 метров
+						</p>
+					</div>
+					<div class="format__must_item">
+						<img src="img/format__must2.svg" alt="">
+						<p>
+							20-30 минут ежедневно для тренировок
+						</p>
+					</div>
+					<div class="format__must_item">
+						<img src="img/format__must3.svg" alt="">
+						<p>
+							Лакомство и игрушки для поощрения
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="teacher" id="three">
+
+			<div class="navigation">
+				<ul>
+					<li><a href="#menu">
+						<svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M9.192 4.568L4.956 0.331999L0.72 4.568V5.888L4.488 2.12V9.392H5.424V2.12L9.192 5.888V4.568Z"/></svg>
+					</a></li>
+					<li>
+						<a href="#one">
+							<b>01</b>
+						</a>
+					</li>
+					<li>
+						<a href="#two">
+							<b>02</b>
+						</a>
+					</li>
+					<li>
+						<a href="#three" class="navigation__active">
+							<b>03</b>
+							<span>О преподавателе</span>
+						</a>
+					</li>
+					<li>
+						<a href="#four">
+							<b>04</b>
+						</a>
+					</li>
+					<li>
+						<a href="#five">
+							<b>05</b>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="teacher__container container">
+
+				<div class="teacher__col">
+					<h2>Меня зовут Мария Фандеева,<br> я — инструктор-кинолог,<br> основатель школы ФанДогс.</h2>
+					<img src="img/teacher1.jpg" alt="">
+				</div>
+
+				<div class="teacher__col">
+
+					<div class="teacher__item">
+						<p class="teacher__item_title">Мои собаки</p>
+						<p>
+							Я владелец прекрасных собак, истории которых можно отследить
+							<br> в <a href="#">моем блоге</a>. Не все было гладко и легко, но вера, мотивация
+							<br> и упорный труд помогли мне и на моем пути.
+						</p>
+					</div>
+					<div class="teacher__item">
+						<p class="teacher__item_title">Образование</p>
+						<p>
+							Я инструктор-кинолог c 2012 года, имеющий опыт обучения под руководством старших инструкторов на протяжении нескольких лет. На данный момент студент Академии ветеринарной медицины Санкт-Петербурга. Преподаватель в Школе ДОСААФ в 2017 году.
+						</p>
+					</div>
+					<div class="teacher__item teacher__item--last">
+						<p class="teacher__item_title">Спорт</p>
+						<p>
+							Я спортсмен, прошедший путь с собакой шоу разведения. В прошлом спортсмен в системе спортивно-прикладного собаководства, Кандидат на Чемпионат России от Ростовской области, Чемпион Санкт-Петербурга и Северо-Западного округа по национальным видам дрессировки. Сейчас я занимаюсь такими видами, как BH, IGP (IPO), ралли-обидиенс.
+						</p>
+					</div>
+
+					<img src="img/teacher2.jpg" alt="">
+				</div>
+
+			</div>
+		</section>
+
+		<section class="question" id="four">
+
+			<div class="navigation">
+				<ul>
+					<li><a href="#menu">
+						<svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M9.192 4.568L4.956 0.331999L0.72 4.568V5.888L4.488 2.12V9.392H5.424V2.12L9.192 5.888V4.568Z"/></svg>
+					</a></li>
+					<li>
+						<a href="#one">
+							<b>01</b>
+						</a>
+					</li>
+					<li>
+						<a href="#two">
+							<b>02</b>
+						</a>
+					</li>
+					<li>
+						<a href="#three">
+							<b>03</b>
+						</a>
+					</li>
+					<li>
+						<a href="#four" class="navigation__active">
+							<b>04</b>
+							<span>Ответы на вопросы</span>
+						</a>
+					</li>
+					<li>
+						<a href="#five">
+							<b>05</b>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="question__container container">
+				<h2>
+					Наша школа подходит всем, кто хочет
+					<br> выстроить правильные отношения 
+					<br> с собакой, наладить контакт, исправить
+					<br> мешающее жизни поведение.
+				</h2>
+
+				<div class="question__list">
+
+					<div class="question__item">
+						<h3>
+							У меня собака породы хаски (чихуахуа, чау-чау, шарпей). Можно ли с ней заниматься дрессировкой?
+						</h3>
+						<div class="question__item_content">
+							<img src="img/question__avatar.png" alt="">
+							<p>
+								Заниматься можно с собакой абсолютно любой породы. Конечно, мы будем учитывать индивидуальные особенности каждой собаки, и строить тренинг  в зависимости от них. Но достижение результата зависит только от терпения и упорства владельца. 
+							</p>
+						</div>
+					</div>
+
+					<div class="question__item">
+						<h3>
+							Моей собаке уже 2 года (3, 4, 5 лет),
+							<br> могу ли я заниматься с ней, или уже поздно?
+						</h3>
+						<div class="question__item_content">
+							<img src="img/question__avatar.png" alt="">
+							<p>
+								Собака не теряет способности к обучению в любом возрасте. Самое главное — повысить мотивацию, мы обязательно занимаемся этим на всех наших курсах
+							</p>
+						</div>
+					</div>
+					
+					<div class="question__item">
+						<h3>
+							Нужна ли мне специальная видеокамера для записи отчетных видеороликов?
+						</h3>
+						<div class="question__item_content">
+							<img src="img/question__avatar.png" alt="">
+							<p>
+								Для сдачи домашних заданий не нужно снимать профессиональных видео. Достаточно видео, снятого на телефон в светлое время суток или при ярком свете фонарей. Желательно иметь помощника, который снимет ваши занятия со стороны, или можно закрепить телефон любыми подручными средствами.
+							</p>
+						</div>
+					</div>
+					
+					<div class="question__item">
+						<h3>
+							В моем городе нет собачьей площадки, где мне выполнять упражнения и домашние задания?
+						</h3>
+						<div class="question__item_content">
+							<img src="img/question__avatar.png" alt="">
+							<p>
+								Выполнять упражнения можно там же, где вы гуляете с собакой ежедневно. Возможно, для некоторых упражнений вам понадобится тихое безлюдное место, но никакого специального инвентаря не потребуется.
+							</p>
+						</div>
+					</div>
+
+					<div class="question__item">
+						<h3>
+							Моя собака глупая и не сможет ничему научиться.
+						</h3>
+						<div class="question__item_content">
+							<img src="img/question__avatar.png" alt="">
+							<p>
+								Такого не может быть! Все собаки могут учиться, главное, показать им, что взаимодействие с человеком — это весело, вкусно и интересно!
+							</p>
+						</div>
+					</div>
+
+					<form class="question__form">
+						<h3>
+							Задайте ваш вопрос
+						</h3>
+						<div class="question__form_line">
+							<input type="text" placeholder="Ваш текст">
+							<button>Отправить</button>
+						</div>
+					</form>
+					
+				</div>
+
+			</div>
+		</section>
+
+		<section class="reviews" id="five">
+
+			<div class="navigation">
+				<ul>
+					<li><a href="#menu">
+						<svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M9.192 4.568L4.956 0.331999L0.72 4.568V5.888L4.488 2.12V9.392H5.424V2.12L9.192 5.888V4.568Z"/></svg>
+					</a></li>
+					<li>
+						<a href="#one">
+							<b>01</b>
+						</a>
+					</li>
+					<li>
+						<a href="#two">
+							<b>02</b>
+						</a>
+					</li>
+					<li>
+						<a href="#three">
+							<b>03</b>
+						</a>
+					</li>
+					<li>
+						<a href="#four">
+							<b>04</b>
+						</a>
+					</li>
+					<li>
+						<a href="#five" class="navigation__active">
+							<b>05</b>
+							<span>Отзывы</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="reviews__container container">
+				<h2>
+					Десятки хозяев оставляют свои
+					<br> отзывы о наших курсах и вебинарах.
+					<br> У нас нет недовольных клиентов!
+				</h2>
+
+				<div class="reviews__slider swiper-container">
+					<div class="swiper-wrapper">
+
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews__slide_header">
+								<img src="img/reviews__avatar.png" alt="">
+								<p>
+									<span>Диана и Альф</span>
+									<a href="#">vk.com/diana2801</a>
+								</p>
+							</div>
+							<p>
+								Я очень благодарна Маше за проведенные занятия. Все очень понравилось. Милая, отзывчивая, талантливая девушка. За 10 занятий с собакой пошел настоящий прогресс. Маша в первую очередь научила меня слышать свою собаку, взаимодействовать с ней.
+								<br><br>Спасибо большое, Маша, за твою отдачу!
+							</p>
+							<img src="img/reviews__slide1.jpg" alt="" class="reviews__slide_dog">
+							<div class="reviews__slide_navigation">
+								<a href="#">смотреть Все отзывы</a>
+								<div class="reviews__prev swiper-button-prev">
+									<svg width="27" height="12" viewBox="0 0 27 12" xmlns="http://www.w3.org/2000/svg"><rect x="27" y="7" width="22" height="2" transform="rotate(-180 27 7)"/><path d="M6 0L6 12L5.24537e-07 6L6 0Z"/></svg>
+									Предыдущий
+								</div>
+								<div class="reviews__next swiper-button-next">
+									Следующий
+									<svg width="27" height="12" viewBox="0 0 27 12" xmlns="http://www.w3.org/2000/svg"><rect y="5" width="22" height="2"/><path d="M21 12V0L27 6L21 12Z"/></svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews__slide_header">
+								<img src="img/reviews__avatar.png" alt="">
+								<p>
+									<span>Диана и Альф</span>
+									<a href="#">vk.com/diana2801</a>
+								</p>
+							</div>
+							<p>
+								Я очень благодарна Маше за проведенные занятия. Все очень понравилось. Милая, отзывчивая, талантливая девушка. За 10 занятий с собакой пошел настоящий прогресс. Маша в первую очередь научила меня слышать свою собаку, взаимодействовать с ней.
+								<br>
+								Я очень благодарна Маше за проведенные занятия. Все очень понравилось. Милая, отзывчивая, талантливая девушка. За 10 занятий с собакой пошел настоящий прогресс. Маша в первую очередь научила меня слышать свою собаку, взаимодействовать с ней.
+							</p>
+							<img src="img/reviews__slide1.jpg" alt="" class="reviews__slide_dog">
+							<div class="reviews__slide_navigation">
+								<a href="#">смотреть Все отзывы</a>
+								<div class="reviews__prev swiper-button-prev">
+									<svg width="27" height="12" viewBox="0 0 27 12" xmlns="http://www.w3.org/2000/svg"><rect x="27" y="7" width="22" height="2" transform="rotate(-180 27 7)"/><path d="M6 0L6 12L5.24537e-07 6L6 0Z"/></svg>
+									Предыдущий
+								</div>
+								<div class="reviews__next swiper-button-next">
+									Следующий
+									<svg width="27" height="12" viewBox="0 0 27 12" xmlns="http://www.w3.org/2000/svg"><rect y="5" width="22" height="2"/><path d="M21 12V0L27 6L21 12Z"/></svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews__slide_header">
+								<img src="img/reviews__avatar.png" alt="">
+								<p>
+									<span>Диана и Альф</span>
+									<a href="#">vk.com/diana2801</a>
+								</p>
+							</div>
+							<p>
+								Я очень благодарна Маше за проведенные занятия. Все очень понравилось. Милая, отзывчивая, талантливая девушка. За 10 занятий с собакой пошел настоящий прогресс. Маша в первую очередь научила меня слышать свою собаку, взаимодействовать с ней.
+								<br><br>Спасибо большое, Маша, за твою отдачу!
+							</p>
+							<img src="img/reviews__slide1.jpg" alt="" class="reviews__slide_dog">
+							<div class="reviews__slide_navigation">
+								<a href="#">смотреть Все отзывы</a>
+								<div class="reviews__prev swiper-button-prev">
+									<svg width="27" height="12" viewBox="0 0 27 12" xmlns="http://www.w3.org/2000/svg"><rect x="27" y="7" width="22" height="2" transform="rotate(-180 27 7)"/><path d="M6 0L6 12L5.24537e-07 6L6 0Z"/></svg>
+									Предыдущий
+								</div>
+								<div class="reviews__next swiper-button-next">
+									Следующий
+									<svg width="27" height="12" viewBox="0 0 27 12" xmlns="http://www.w3.org/2000/svg"><rect y="5" width="22" height="2"/><path d="M21 12V0L27 6L21 12Z"/></svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="reviews__slide swiper-slide">
+							<div class="reviews__slide_header">
+								<img src="img/reviews__avatar.png" alt="">
+								<p>
+									<span>Диана и Альф</span>
+									<a href="#">vk.com/diana2801</a>
+								</p>
+							</div>
+							<p>
+								Я очень благодарна Маше за проведенные занятия. Все очень понравилось. Милая, отзывчивая, талантливая девушка. За 10 занятий с собакой пошел настоящий прогресс. Маша в первую очередь научила меня слышать свою собаку, взаимодействовать с ней.
+								<br><br>Спасибо большое, Маша, за твою отдачу!
+							</p>
+							<img src="img/reviews__slide1.jpg" alt="" class="reviews__slide_dog">
+							<div class="reviews__slide_navigation">
+								<a href="#">смотреть Все отзывы</a>
+								<div class="reviews__prev swiper-button-prev">
+									<svg width="27" height="12" viewBox="0 0 27 12" xmlns="http://www.w3.org/2000/svg"><rect x="27" y="7" width="22" height="2" transform="rotate(-180 27 7)"/><path d="M6 0L6 12L5.24537e-07 6L6 0Z"/></svg>
+									Предыдущий
+								</div>
+								<div class="reviews__next swiper-button-next">
+									Следующий
+									<svg width="27" height="12" viewBox="0 0 27 12" xmlns="http://www.w3.org/2000/svg"><rect y="5" width="22" height="2"/><path d="M21 12V0L27 6L21 12Z"/></svg>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="fan">
+			<div class="container">
+
+				<img src="img/fan.svg" alt="">
+				
+				<h2>ФанДогс — это уникальная возможность самому<br> стать дрессировщиком для своей собаки.</h2>
+				<a href="#" class="btn">Начать обучение</a>
 
 			</div>
 		</section>
@@ -117,16 +767,77 @@
 	</main>
 
 	<footer class="footer">
-		<div class=" container">
-			<div class="footer__container">
-			
-				<p>© 2019 Основа Групп</p>
+		<div class="footer__container">
 
-				<a href="http://flex-design.net/" target="_blank">Политика конфиденциальности</a>
-
-				<a href="http://flex-design.net/" target="_blank">Created by flexdesign</a>
-				
+			<div class="footer__col--first footer__col">
+				<a href="#" class="footer__logo">
+					<img src="img/footer__logo.svg" alt="">
+				</a>
+				<form class="footer__form">
+					<p>
+						Новости школы, полезные статьи
+						<br>и обучающие видео в вашей почте
+					</p>
+					<div class="footer__form_line">
+						<input type="email" placeholder="Ваш email">
+						<button>
+							<svg width="27" height="12" viewBox="0 0 27 12" xmlns="http://www.w3.org/2000/svg"><rect y="5" width="22" height="2"/><path d="M21 12V0L27 6L21 12Z"/></svg>
+						</button>
+					</div>
+				</form>
 			</div>
+
+			<div class="footer__wrap">
+
+				<div class="footer__col">
+					<div>
+						<h3>ФанДогс</h3>
+						<ul>
+							<li><a href="#">О школе</a></li>
+							<li><a href="#">Обучение</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li>
+								<a href="#">Блог
+									<svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg"><g><path d="M11 0H6L11 5V0Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.29297 5.29297L9.29297 0.292969L10.7072 1.70718L5.70718 6.70718L4.29297 5.29297Z"/><path d="M0 3H2V11H0V3Z"/><path d="M8 9L8 11L-8.74228e-08 11L0 9L8 9Z"/></g></svg>
+								</a>
+							</li>
+							<li><a href="#">Мои курсы</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="footer__col">
+					<h3>Мы Вконтакте</h3>
+					<script type="text/javascript" src="https://vk.com/js/api/openapi.js?166"></script>
+					<!-- VK Widget -->
+					<div id="vk_groups"></div>
+					<script type="text/javascript">
+					VK.Widgets.Group("vk_groups", {mode: 3}, 65937795);
+					</script>
+				</div>
+
+				<div class="footer__col">
+					<div>
+						<h3>Контакты</h3>
+						<p>9:00—20:00</p>
+						<p><a href="tel:+79818308696">+7 (981) 830-86-96</a></p>
+						<div class="footer__soc">
+							<a href="#" target="_blank">
+								<svg width="14" height="10" viewBox="0 0 14 10" xmlns="http://www.w3.org/2000/svg"><g><path d="M12.4139 0.0428754C12.2803 0.0147768 12.1419 0 12 0H2C1.8581 0 1.71966 0.0147768 1.58612 0.0428755L6.30817 4.56726C6.69495 4.93785 7.30505 4.93785 7.69183 4.56726L12.4139 0.0428754Z" fill="white"/><path d="M13.9037 1.38524L9.0755 6.01138C7.91516 7.12315 6.08484 7.12315 4.9245 6.01138L0.0962601 1.38524C0.0337615 1.57892 0 1.78552 0 2V8C0 9.10457 0.89543 10 2 10H12C13.1046 10 14 9.10457 14 8V2C14 1.78552 13.9662 1.57892 13.9037 1.38524Z"/></g></svg>
+							</a>
+							<a href="#" target="_blank">
+								<svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><g opacity="0.8"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 10C8.65685 10 10 8.65685 10 7C10 5.34315 8.65685 4 7 4C5.34315 4 4 5.34315 4 7C4 8.65685 5.34315 10 7 10ZM7 8.5C7.82843 8.5 8.5 7.82843 8.5 7C8.5 6.17157 7.82843 5.5 7 5.5C6.17157 5.5 5.5 6.17157 5.5 7C5.5 7.82843 6.17157 8.5 7 8.5Z"/><path d="M10.5 3C10.2239 3 10 3.22386 10 3.5C10 3.77614 10.2239 4 10.5 4C10.7761 4 11 3.77614 11 3.5C11 3.22386 10.7761 3 10.5 3Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 4C0 1.79086 1.79086 0 4 0H10C12.2091 0 14 1.79086 14 4V10C14 12.2091 12.2091 14 10 14H4C1.79086 14 0 12.2091 0 10V4ZM4 2C2.89543 2 2 2.89543 2 4V10C2 11.1046 2.89543 12 4 12H10C11.1046 12 12 11.1046 12 10V4C12 2.89543 11.1046 2 10 2H4Z"/></g></svg>
+							</a>
+							<a href="#" target="_blank">
+								<svg width="16" height="11" viewBox="0 0 16 11" xmlns="http://www.w3.org/2000/svg"><path d="M15.32 1.02593C14.886 0.278744 14.415 0.141308 13.456 0.0890433C12.498 0.0261323 10.089 0 8.002 0C5.911 0 3.501 0.0261324 2.544 0.0880755C1.587 0.141308 1.115 0.277776 0.677 1.02593C0.23 1.77216 0 3.05748 0 5.32034C0 5.32227 0 5.32324 0 5.32324C0 5.32518 0 5.32615 0 5.32615V5.32808C0 7.58126 0.23 8.87626 0.677 9.61474C1.115 10.3619 1.586 10.4974 2.543 10.5603C3.501 10.6145 5.911 10.6465 8.002 10.6465C10.089 10.6465 12.498 10.6145 13.457 10.5613C14.416 10.4984 14.887 10.3629 15.321 9.61571C15.772 8.87723 16 7.58223 16 5.32905C16 5.32905 16 5.32615 16 5.32421C16 5.32421 16 5.32227 16 5.32131C16 3.05748 15.772 1.77216 15.32 1.02593ZM6 8.22683V2.41966L11 5.32324L6 8.22683Z"/></svg>
+							</a>
+						</div>
+					</div>
+					<div class="footer__copy">© FanDogs 2019</div>				 
+				</div>
+
+			</div>
+    
 		</div>
 	</footer>
 

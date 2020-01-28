@@ -2,15 +2,28 @@
 
 //----------------------fonts---------------------
 $fonts: 'Roboto', sans-serif
-$title: 'DIN 2014', sans-serif
 //---------------------end-fonts---------------------
 
 //----------------------color---------------------
 $accent: #DD4E6A
-$text: #1D2025
+$accent--hover: #D0294A
 
-$accent-lite: #FF9C9C
-$bg: #DBD3D2
+$text: #1D2025
+$text--light: #918487
+
+$link: #A3253D
+
+$blue: #4791EA
+$blue--hover: #2F7DDC
+
+$bg--dark: #DBD3D2
+$bg--yellow: #F6F3E3
+$bg--light: #F4EDEB
+$bg--footer: #1D2025
+
+$green: #27AE60
+
+$orange: #F59134
 
 //---------------------end-color---------------------
 
@@ -19,16 +32,18 @@ body
 	position: relative
 	min-width: 320px
 	font-family: $fonts
-	font-display: swap
 	font-size: 16px
 	color: $text
-	line-height: 1.4
+	line-height: 1.5
 	font-weight: 400
 
 ::selection
 	background-color: $accent
 	color: #fff
 
+section
+	position: relative
+	
 a, div, ul, li, input, textarea
 	&:hover,
 	&:focus
@@ -39,7 +54,14 @@ h1, h2, h3, h4, h5, h6
 	line-height: 1.2
 	margin: 0
 	padding: 0
-	font-family: $title
+	// font-family: $title
+
+h2
+	font-size: 36px
+	text-align: center
+	margin-bottom: 50px
+	font-weight: 400
+	line-height: 1.4
 
 a
 	color: $text
@@ -86,7 +108,8 @@ button:hover
 	outline: none
 	text-decoration: none
 	transition: all .6s
-
+	cursor: pointer
+	
 
 .no-scroll
 	overflow: hidden
@@ -99,10 +122,10 @@ button:hover
 	margin: 0 auto
 	padding: 0 15px
 
-
 .main
 	overflow: hidden
 
 
 @import "_base/btn"
 @import "_base/form"
+@import "_base/hamburger"
