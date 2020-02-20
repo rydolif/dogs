@@ -1,0 +1,367 @@
+
+.courses
+
+	&-hero
+		padding-top: 140px
+
+		h1
+			font-size: 38px
+			margin:
+				bottom: 35px
+				right: 0
+
+		p
+			font-size: 20px
+
+		&__content
+			max-width: 730px
+			margin-bottom: 60px
+
+	&-online
+		padding-bottom: 50px
+
+		h3
+			font-size: 34px
+			font-weight: 400
+			margin-bottom: 50px
+			line-height: 1.6
+
+		&__container
+			display: flex
+			flex-wrap: wrap
+
+		&__content
+			position: relative
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			width: 65%
+			margin-right: 2.7%
+			font-size: 20px
+			background-color: $bg--yellow
+			padding: 50px 40px 40px
+			z-index: 1
+			margin-bottom: 60px
+
+			a
+				color: $accent
+
+				&:hover,
+				&:focus
+					color: $accent--hover
+
+			&_decor
+				position: absolute
+				top: -50px
+				right: 0
+				z-index: -1
+
+			p
+				margin-bottom: 3px
+
+			&_footer
+				font-size: 16px
+
+		&__description
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			justify-content: space-between
+			width: 32%
+			margin-right: 1.7%
+			font-size: 16px
+			margin-bottom: 65px
+
+			&:nth-child(4n+1)
+				margin-right: 0
+
+			&:nth-child(2)
+				margin-right: 0
+
+			h3
+				font-weight: 700
+				margin-bottom: 10px
+				line-height: 1.4
+
+			img
+				width: 100%
+				display: block
+				margin-bottom: 15px
+
+			p
+				margin-bottom: 25px
+
+			&_label
+				display: inline-block
+				background-color: $orange
+				margin-bottom: 25px
+				color: #fff
+				font-size: 12px !important
+				line-height: 2
+				text-transform: uppercase
+				letter-spacing: 0.1em
+				padding: 0 12px
+
+				&--blue
+					background-color: $blue
+
+				&--gray
+					background-color: $bg--dark
+					color: $text--light
+
+			&_price
+
+				b
+					font-size: 34px
+					color: $accent
+
+			&_left
+				font-size: 12px !important
+				margin-bottom: 0 !important
+
+			&_link
+				text-transform: uppercase
+				font-size: 16px
+				font-weight: 600
+				letter-spacing: 1px
+				line-height: 3
+	
+		&__video
+			position: relative
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			font-size: 20px
+			padding: 65px 55px 0
+			width: 100%
+			z-index: 1
+			margin-bottom: 80px
+
+			&::before
+				content: ''
+				position: absolute
+				top: 0
+				right: 0
+				left: 0
+				bottom: 45px
+				background-color: $bg--yellow
+				z-index: -1
+
+			div
+				width: 28%
+
+			p
+				margin-bottom: 17px
+				line-height: 1.6
+
+			iframe
+				margin-right: -55px
+				width: 800px
+				height: 455px
+
+			a
+				position: absolute
+				bottom: 5px
+				left: 0
+				text-transform: uppercase
+				color: $accent
+				font-size: 16px
+				letter-spacing: 1px
+				font-weight: 500
+
+				&:hover,
+				&:focus
+					color: $accent--hover
+
+
+@media only screen and (max-width : 1250px)
+	.courses
+		&-hero
+			padding-top: 100px
+
+			h1
+				margin-bottom: 20px
+
+			&__content
+				margin-bottom: 30px
+
+		&-online
+			padding-bottom: 0
+
+			h3
+				font-size: 26px
+
+			&__description
+				&_label
+					margin-bottom: 10px
+
+				p
+					margin-bottom: 10px
+
+				&_price
+					b
+						font-size: 26px
+
+			&__content
+				padding: 30px
+				font-size: 18px
+
+			&__video
+				padding: 30px
+				margin-bottom: 40px
+
+				br
+					display: none
+
+				iframe
+					width: 75%
+					height: 400px
+
+
+@media only screen and (max-width : 992px)
+	.courses
+		&-hero
+			padding-top: 70px
+
+			p
+				font-size: 16px
+
+		&-online
+			&__content
+				padding: 15px
+				font-size: 14px
+				margin-bottom: 30px
+
+				h3
+					font-size: 22px
+					margin-bottom: 20px
+
+				&_footer
+					font-size: 14px
+
+			&__description
+				margin-bottom: 30px
+
+				h3
+					font-size: 22px
+
+				p
+					font-size: 12px
+
+				img
+					margin-bottom: 5px
+
+				&_price b
+					font-size: 22px
+
+				&_label
+					font-size: 10px !important
+					margin-bottom: 5px
+
+				&_link
+					font-size: 14px !important
+
+		&-online__video
+			p
+				font-size: 16px
+
+			iframe
+				height: 320px
+
+
+@media only screen and (max-width : 767px)
+
+	.courses-online
+
+		&__container
+			justify-content: space-between
+
+		&__content
+			width: 100%
+			margin-right: 0
+
+			&_decor
+				display: none
+
+			div
+				margin-bottom: 15px
+
+			&_footer
+				font-size: 12px
+				margin-bottom: 0 !important
+
+		&__description
+			width: 48%
+			margin-right: 0
+
+			&:nth-child(4n+1)
+				margin-right: 0
+
+			&:nth-child(2)
+				margin-right: 0
+
+		&__video
+			padding: 15px
+			text-align: center
+
+			iframe
+				width: 100%
+				margin: 0 auto
+
+			div
+				width: 100%
+
+			p
+				margin-bottom: 5px
+				font-size: 14px
+
+			a
+				position: relative
+
+
+@media only screen and (max-width : 576px)
+	.courses
+		&-hero
+
+			&__content
+				margin-bottom: 20px
+
+			h1
+				font-size: 32px
+				margin-bottom: 15px
+
+			p
+				font-size: 14px
+
+			br
+				display: none
+		
+		&-online
+			&__content h3
+				font-size: 18px
+
+@media only screen and (max-width : 480px)
+	.courses
+		&-hero
+
+			&__content
+				margin-bottom: 15px
+				padding: 10px
+
+			h1
+				font-size: 26px
+		
+		&-online
+			&__content h3
+				font-size: 18px
+
+			&__description
+				width: 100%
+				text-align: center
+
+				img
+					max-width: 320px
+					margin: 0 auto 5px
+
+				div
+					margin: 0 auto
