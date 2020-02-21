@@ -75,6 +75,38 @@
 	.fan
 		padding: 80px 0
 
+	.pagination
+		margin-bottom: 50px
+
+	.feedback
+		&__img
+			width: 30%
+			height: auto
+			margin-right: 5%
+
+			img
+				height: auto
+
+		&__item
+			max-width: 100%
+
+			&--reverse
+				.feedback__img
+					margin-left: 5%
+
+
+		&__content
+			max-width: 65%
+
+			&_main
+				p
+					font-size: 16px
+					margin-bottom: 5px
+
+			&_header
+				margin-bottom: 15px
+				padding-top: 0
+
 
 @media only screen and (max-width : 992px)
 	body
@@ -405,6 +437,17 @@
 			img
 				display: block
 				margin: 0 auto 5px
+	
+	.feedback
+		&__item
+			margin-bottom: 30px
+
+		&__content
+			&_header
+				margin-bottom: 10px
+
+			&_main p
+				font-size: 14px
 
 
 @media only screen and (max-width : 576px)
@@ -569,6 +612,13 @@
 
 				&:last-child
 					margin-bottom: 0
+	
+	.feedback
+		&__content
+			max-width: 100%
+
+		&__img
+			display: none
 
 
 @media only screen and (max-width : 390px)

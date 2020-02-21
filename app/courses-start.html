@@ -62,7 +62,7 @@
 
 	<main class="main">
 
-		<section class="courses-hero courses-hero--start" id="">
+		<section class="courses-hero courses-hero--start">
 			<div class="container">
 
 				<ul class="courses-hero__grums">
@@ -96,7 +96,7 @@
 						<p>6200 руб. при оплате до 1 мая</p>
 						<p>6500 руб. при оплате до 5 мая</p>
 						<div class="courses-vebinar__wrap_btn">
-							<a href="#" class="btn btn--dark">Участвовать</a>
+							<a href="#" class="btn btn--dark course_open">Участвовать</a>
 							<p class="courses-vebinar__wrap_position">Осталось 8 мест</p>
 						</div>
 					</div>
@@ -235,7 +235,7 @@
 			</div>
 		</section>
 
-		<section class="courses-online" id="">
+		<section class="courses-online">
 			<div class="courses-online__container container">
 				
 				<div class="courses-online__video">
@@ -267,7 +267,7 @@
 						<p>6200 руб. при оплате до 1 мая</p>
 						<p>6500 руб. при оплате до 5 мая</p>
 						<div class="courses-vebinar__wrap_btn">
-							<a href="#" class="btn btn--dark">Участвовать</a>
+							<a href="#" class="btn btn--dark course_open">Участвовать</a>
 							<p class="courses-vebinar__wrap_position">Осталось 8 мест</p>
 						</div>
 					</div>
@@ -383,6 +383,82 @@
     
 		</div>
 	</footer>
+
+	<div class="modal" id="course">
+
+		<button class="modal__close course_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal__from tabs form">
+			<div class="modal__header">
+				<h3>Оплата курса</h3>
+				<h4>Базовый курс — продвинутый <br>Старт курса 5 мая</h4>
+				<p><b>5900</b> руб.</p>
+				<p>
+					6 недель практики
+					<br>Индивидуальные рекомендации
+					<br>Проверка домашних заданий преподавателем
+					<br>Общение с группой
+					<br>1 вебинар онлайн
+					<br><br>После оплаты курс будет доступен в разделе «Мои курсы»
+				</p>
+			</div>
+
+			<ul class="modal__list">
+				<li><a href="#one">Вход на сайт</a></li>
+				<li><a href="#two">Регистрация</a></li>
+			</ul>
+
+			<form method="post" id="one" class="tabs__wrap">
+				<div class="modal__soc">
+					<p>Вход через социальные сети</p>
+					<ul>
+						<li><a href="#"><img src="img/modal/vk.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/modal/fb.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/modal/google.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/modal/ya.svg" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="modal__line">
+					<input type="email" name="mail" required placeholder="Ваш email">
+				</div>
+				<div class="modal__line">
+					<input type="password" name="password" required placeholder="Пароль">
+				</div>
+				<div class="modal__btn">
+					<button type="submit" class="btn" name="submit">Перейти к оплате</button>
+				</div>
+			</form>
+
+			<form method="post" id="two" class="tabs__wrap">
+				<div class="modal__soc">
+					<p>Вход через социальные сети</p>
+					<ul>
+						<li><a href="#"><img src="img/modal/vk.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/modal/fb.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/modal/google.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/modal/ya.svg" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="modal__line">
+					<input type="email" name="mail" id="modal__mail" required placeholder="Ваш email">
+					<label for="modal__mail">На этот адрес мы пришлем ссылку для активации аккаунта</label>
+				</div>
+				<div class="modal__line">
+					<input type="password" name="password" required placeholder="Пароль">
+				</div>
+				<div class="modal__line">
+					<input type="password" name="password" required placeholder="Повторите пароль">
+				</div>
+				<div class="modal__btn">
+					<button type="submit" class="btn" name="submit">Перейти к оплате</button>
+				</div>
+			</form>
+
+		</div>
+	</div>
 
 	<script src="js/scripts.min.js"></script>
 
