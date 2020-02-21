@@ -337,6 +337,9 @@
 					&:last-child
 						margin-bottom: 0
 
+				&--full
+					width: 100%
+
 			p
 				margin-bottom: 25px
 
@@ -392,6 +395,11 @@
 
 			p
 				font-size: 16px
+				margin-bottom: 6px
+
+			&__grums
+				margin-bottom: 10px
+				font-size: 14px
 
 		&-online
 			&__content
@@ -435,55 +443,112 @@
 			iframe
 				height: 320px
 
+		&-vebinar
+			h3
+				font-size: 30px
+				margin-bottom: 15px
+
+			&__wrap_item
+				padding: 20px
+
+				&--red
+
+					b
+						font-size: 30px
+
+				&--yellow_header
+					margin-bottom: 15px
+
+		&-plan
+			padding: 50px 0
+
+			h3
+				font-size: 30px
+
+			&__item
+				&_number
+					font-size: 34px
+
 
 @media only screen and (max-width : 767px)
 
-	.courses-online
+	.courses
+		&-online
 
-		&__container
-			justify-content: space-between
+			&__container
+				justify-content: space-between
 
-		&__content
-			width: 100%
-			margin-right: 0
+			&__content
+				width: 100%
+				margin-right: 0
 
-			&_decor
-				display: none
+				&_decor
+					display: none
 
-			div
+				div
+					margin-bottom: 15px
+
+				&_footer
+					font-size: 12px
+					margin-bottom: 0 !important
+
+			&__description
+				width: 48%
+				margin-right: 0
+
+				&:nth-child(4n+1)
+					margin-right: 0
+
+				&:nth-child(2)
+					margin-right: 0
+
+			&__video
+				padding: 15px
+				text-align: center
+
+				iframe
+					width: 100%
+					margin: 0 auto
+
+				div
+					width: 100%
+
+				p
+					margin-bottom: 5px
+					font-size: 14px
+
+				a
+					position: relative
+
+		&-vebinar__wrap
+			&_item
+				width: 100%
 				margin-bottom: 15px
 
-			&_footer
-				font-size: 12px
-				margin-bottom: 0 !important
+				&:last-child
+					margin-bottom: 0
 
-		&__description
-			width: 48%
-			margin-right: 0
+		&-plan
+			padding: 40px 0
 
-			&:nth-child(4n+1)
-				margin-right: 0
+			h4
+				font-size: 18px
+				margin-bottom: 5px	
 
-			&:nth-child(2)
-				margin-right: 0
+			&__item
+				margin-bottom: 15px
 
-		&__video
-			padding: 15px
-			text-align: center
+				p
+					margin-bottom: 10px
 
-			iframe
-				width: 100%
-				margin: 0 auto
+				&_header
+					margin-bottom: 15px
 
-			div
-				width: 100%
+				&_wrap
+					width: 92%
 
-			p
-				margin-bottom: 5px
-				font-size: 14px
-
-			a
-				position: relative
+					li
+						margin-bottom: 5px
 
 
 @media only screen and (max-width : 576px)
@@ -506,6 +571,24 @@
 		&-online
 			&__content h3
 				font-size: 18px
+
+		&-vebinar
+			h3
+				font-size: 20px
+
+			&__wrap_item--yellow_img
+				width: 80px
+				height: 80px
+				margin-right: 15px
+
+				img
+					max-width: 100%
+
+		&-plan
+
+			h3
+				font-size: 20px
+
 
 @media only screen and (max-width : 480px)
 	.courses

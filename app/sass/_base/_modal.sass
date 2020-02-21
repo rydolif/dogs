@@ -1,21 +1,32 @@
 .modal
 	position: relative
-	max-width: 480px
+	max-width: 810px
 	width: 100%
 	height: auto
-	padding: 50px
+	padding: 40px 30px
 	background-color: #fff
 	z-index: 1
 	transform: scale(0.8)
+	border: 2px solid #DBD3D2
 
-	h3, p
-		text-align: center
+	&__header
 
-	h3
-		margin-bottom: 5px
-	
-	p
-		margin-bottom: 10px
+		h3
+			margin-bottom: 25px
+			font-size: 34px
+			font-weight: 400
+
+		h4
+			font-size: 20px
+			margin-bottom: 20px
+			font-weight: 400
+		
+		p
+			margin-bottom: 15px
+
+		b
+			font-size: 36px
+			color: $accent
 
 	&__close
 		position: absolute
@@ -28,26 +39,24 @@
 		border: none
 		cursor: pointer
 		transition: all .6s
-		border: 2px solid #d25e5e
 		border-radius: 50%
 
 		&:hover, &:focus
 			outline: none
 			transform: rotate(90deg)
-			border-color: $red
 
 			span
-				background-color: $red
+				background-color: $accent
 
 		span
 			display: block
 			position: absolute
 			left: 50%
 			top: 50%
-			background: #d25e5e
+			background: #DBD3D2
 			transition: all .6s
 			border-radius: 4px
-			height: 18px
+			height: 12px
 			width: 2px
 
 			&:first-child
@@ -56,6 +65,55 @@
 			&:last-child
 				transform: translate(-50%, -50%) rotate(-45deg)
 	
+	&__line
+		margin-bottom: 25px
+
+	&__list
+		display: flex
+		font-size: 12px
+		margin-bottom: 35px
+
+		li
+			margin-right: 30px
+
+			&:last-child
+				margin-right: 0
+
+		a
+			display: block
+			border-bottom: 2px solid transparent
+			color: #918487
+			line-height: 2.5
+
+		.active
+			border-bottom: 2px solid $accent
+			color: $text
+
+	&__soc
+		color: #918487
+		margin-bottom: 50px
+
+		p
+			margin-bottom: 10px
+
+		ul
+			display: flex
+			flex-wrap: wrap
+
+		li
+			margin-right: 15px
+
+			&:last-child
+				margin-right: 0
+
+		img
+			transition: all .6s
+
+		a
+			&:hover,
+			&:focus
+				img
+					transform: scale(.9)
 
 
 .popup_visible .modal
