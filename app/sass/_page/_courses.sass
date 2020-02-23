@@ -219,6 +219,12 @@
 				justify-content: center
 				width: 49%
 				padding: 40px 35px 25px
+				z-index: 1
+
+				svg
+					position: absolute
+					z-index: -1
+					max-height: 100%
 
 				&--red
 					background-color: #DD4E6A
@@ -235,8 +241,15 @@
 					p
 						margin-bottom: 5px
 
+					svg
+						right: -10px
+
 				&--yellow
 					background-color: #F6F3E3
+
+					svg
+						position: absolute
+						left: -20px 
 
 					a
 						color: $accent
@@ -279,6 +292,9 @@
 
 				&--form
 					background-color: #DBD3D2
+
+					svg
+						right: 20px
 
 
 					h4
@@ -669,3 +685,9 @@
 
 				div
 					margin: 0 auto
+
+		&-online__video iframe
+			height: 240px
+
+
+
