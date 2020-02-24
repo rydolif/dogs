@@ -55,9 +55,16 @@
 					color: $text
 
 		&_edit
-			display: block
-			width: 16px
+			display: flex
+			align-items: center
+			// width: 16px
 			height: 16px
+			font-size: 12px
+			color: #918487
+			line-height: 1
+
+			svg
+				margin-right: 10px
 
 			g
 				opacity: .2
@@ -129,6 +136,8 @@
 					top: 50%
 					transform: translate(-50%, -50%)
 					width: 100%
+
+
 
 
 	&__main
@@ -372,6 +381,116 @@
 				background-color: #918487
 
 
+	&--info
+		&__nav
+			width: 72%
+
+			&_data
+				margin-bottom: 50px
+
+				li
+					margin-bottom: 12px
+
+					&:last-child
+						margin-bottom: 0
+
+				span
+					display: inline-block
+					letter-spacing: 1px
+					color: #918487
+					font-size: 12px
+					text-transform: uppercase
+					width: 80px
+					margin-right: 20px
+
+				a
+					color: $accent
+
+					&:hover,
+					&:focus
+						color: $accent
+
+			&_dogs
+
+				h4
+					margin-bottom: 10px
+
+				&--img
+					position: relative
+					width: 165px
+					height: 165px
+					margin-right: 45px
+
+					img
+						position: absolute
+						left: 50%
+						top: 50%
+						transform: translate(-50%, -50%)
+						width: 100%
+
+				p
+					font-size: 20px
+					margin-bottom: 15px
+
+				li
+					margin-bottom: 12px
+					font-size: 16px
+
+					&:last-child
+						margin-bottom: 0
+
+				span
+					display: inline-block
+					letter-spacing: 1px
+					color: #918487
+					font-size: 12px
+					text-transform: uppercase
+					width: 60px
+					margin-right: 20px
+
+				a
+					color: $accent
+
+					&:hover,
+					&:focus
+						color: $accent
+		
+
+		&__main
+			width: 23%
+
+		&__content
+			margin-bottom: 30px
+
+			h3
+				font-size: 16px !important
+				line-height: 1.4
+				margin-bottom: 10px
+
+			&_header
+				padding: 25px
+				font-size: 12px !important
+				overflow: hidden
+
+				p
+					display: flex
+					justify-content: space-between
+					align-items: center
+
+				i
+					background-color: $blue
+					border-radius: 20px
+					padding: 5px 10px
+					color: #fff
+					font-style: normal
+					font-size: 16px !important
+
+				&--label
+					font-size: 12px !important
+					padding: 4px 15px
+
+
+
 @media only screen and (max-width: 1250px)
 	.student
 		padding: 100px 0
@@ -437,6 +556,25 @@
 					width: 35px
 					height: 35px
 
+		&--info
+			&__nav
+				width: 65%
+
+				&_dogs
+					&--img
+						width: 100px
+						height: 100px
+						margin-right: 10px
+
+					li
+						margin-bottom: 5px
+
+					p
+						margin-bottom: 0
+
+			&__main
+				width: 31%
+
 
 @media only screen and (max-width: 993px)
 	.student
@@ -488,6 +626,13 @@
 			&_title
 				margin-bottom: 10px
 
+		&--info
+			&__nav
+				&_dogs
+					text-align: left
+
+					span
+						margin-right: 5px
 
 
 @media only screen and (max-width: 578px)
@@ -507,38 +652,45 @@
 			width: 25px
 			height: 25px
 
+
 @media only screen and (max-width: 480px)
-	.student__content
-		&_table
+	.student
+		&__content
+			&_table
 
-			tr
-				&:first-child
-					border-bottom: none
-			th
-				display: none
+				tr
+					&:first-child
+						border-bottom: none
+				th
+					display: none
 
-			tr, td
-				display: block
-				text-align: center
-				max-width: 100%
-				width: 100%
-				padding: 0
-				line-height: 1.6
+				tr, td
+					display: block
+					text-align: center
+					max-width: 100%
+					width: 100%
+					padding: 0
+					line-height: 1.6
 
-			&--content
-				justify-content: center
+				&--content
+					justify-content: center
 
-			time
-				text-align: center
+				time
+					text-align: center
 
-			p
-				justify-content: center
+				p
+					justify-content: center
 
-		&_header
-			h3
-				font-size: 18px
+			&_header
+				h3
+					font-size: 18px
 
-			&--label
-				font-size: 10px
+				&--label
+					font-size: 10px
 
+		&--info
+			&__nav
+				&_dogs
+					li
+						font-size: 14px
 
