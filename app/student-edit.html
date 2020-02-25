@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Войти</title>
+	<title>Изменение профиля</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -41,6 +41,12 @@
 					</li>
 					<li><span></span></li>
 					<li><a href="#">Мои курсы</a></li>
+					<li>
+						<a href="#" class="header__nav_logout">
+							<svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.4"><rect x="5.25684" y="6" width="7.99995" height="2" fill="#1D2025"/><path d="M12.2568 11V3L16.2568 7L12.2568 11Z" fill="#1D2025"/><rect x="0.256836" width="8.99996" height="2" fill="#1D2025"/><rect x="0.256836" y="12" width="8.99996" height="2" fill="#1D2025"/><rect x="0.256836" width="2.00002" height="14" fill="#1D2025"/></g>
+							</svg>
+						</a>
+					</li>
 				</ul>
 			</nav>
 
@@ -60,28 +66,108 @@
 		</div>
 	</header>
 
-	<main class="main">
+	<main class="main student--edit">
+		<div class="student__container container">
 
-		<section class="login">
-			<div class="modal__from tabs container">
+			<ul class="courses-hero__grums">
+				<li><a href="#">Все курсы и вебинары </a></li>
+				<li>/</li>
+			</ul>
 
-				<a href="main.html" class="btn">Главная</a><br>
-				<a href="login.html" class="btn">Вход</a><br>
-				<a href="courses.html" class="btn">Учитесь онлайн с Фандогс!</a><br>
-				<a href="courses-future.html" class="btn">Профи — магистратура</a><br>
-				<a href="courses-online.html" class="btn">Прогулки без проблем!</a><br>
-				<a href="courses-record.html" class="btn">Секреты мотивации</a><br>
-				<a href="courses-start.html" class="btn">Базовый курс — продвинутый</a><br>
-				<a href="feedback.html" class="btn">Отзывы и результаты наших учеников</a><br>
-				<a href="student.html" class="btn">Профиль студента</a><br>
-				<a href="student-info.html" class="btn">Информация о студенте</a><br>
-				<a href="student-edit.html" class="btn">Изменение профиля</a><br>
+			<h2>Изменение профиля</h2>
 
-			</div>
-		</section>
+			<form class="student--edit__form student__nav student--info__nav form">
 
-	</div>
+				<p class="student--edit__info">
+					<span>Изменения сохранены</span>
+					<a href="#">Вернуться к персональной странице</a>
+				</p>
 
+				<a href="#" class="student__nav_avatar student--edit__img">
+					<img src="img/start/avatar2.png" alt="">
+					<button>Обновить фото</button>
+				</a>
+
+				<p class="student__nav_name">Личная информация</p>
+
+				<div class="modal__line">
+					<input type="text" name="fullname" id="fullname" placeholder=" ">
+					<label for="fullname" class="label">Имя и фамилия</label>
+				</div>
+				<div class="modal__line">
+					<textarea name="info" id="info" placeholder=" "></textarea>
+					<label for="info" class="label">Расскажите о себе</label>
+				</div>
+				<div class="modal__line">
+					<input type="email" name="email" id="email" placeholder=" " required>
+					<label for="email" class="label">Email</label>
+					<label for="">Этот адрес используется для входа на сайт. Для изменения обратитесь к администратору.</label>
+				</div>
+				<div class="student--edit__btn">
+					<button class="btn btn--transparent">Изменить пароль</button>
+				</div>
+				<div class="modal__line">
+					<input type="text" name="vk" id="vk" placeholder=" " required>
+					<label for="vk" class="label">Вконтакте</label>
+				</div>
+				<div class="modal__line">
+					<input type="tel" name="tel" id="tel" placeholder=" " required>
+					<label for="tel" class="label">Телефон</label>
+				</div>
+				<div class="modal__line">
+					<input type="text" name="facebook" id="facebook" placeholder=" " required>
+					<label for="facebook" class="label">Facebook</label>
+				</div>
+				<div class="modal__line">
+					<input type="text" name="instagram" id="instagram" placeholder=" " required>
+					<label for="instagram" class="label">Instagram</label>
+				</div>
+				<div class="modal__line">
+					<input type="text" name="link" id="link" placeholder=" " required>
+					<label for="link" class="label">Ссылка на сайт</label>
+				</div>
+			</form>
+
+			<form class="student--edit__form student__nav student--info__nav form">
+
+				<p class="student__nav_name">Мои собаки</p>
+				<p class="student--edit__btn">
+					<a href="#" class="btn btn--transparent">ДОБАВИТЬ СОБАКУ</a>
+				</p>
+
+				<a href="#" class="student__nav_avatar student--edit__img">
+					<img src="img/start/dogs2.png" alt="">
+					<button>Обновить</button>
+				</a>
+				<div class="student--edit__delet modal__line">
+					<input type="text" name="dogs_name" id="dogs_name" placeholder=" ">
+					<label for="dogs_name" class="label">Кличка</label>
+					<button>Удалить СОБАКУ</button>
+				</div>
+				<div class="modal__line">
+					<input type="email" name="breed" id="breed" placeholder=" " required>
+					<label for="breed" class="label">Email</label>
+				</div>
+				<div class="modal__line">
+					<select name="sex" id="sex">
+						<option value="">Кабель</option>
+						<option value="">Сука</option>
+					</select>
+					<label for="sex" class="label">Пол</label>
+				</div>
+				<div class="modal__line">
+					<input type="date" name="date" id="date" placeholder=" " required>
+					<label for="date" class="label">Дата рождения</label>
+				</div>
+
+				<p class="student--edit__info">
+					<span>Изменения сохранены</span>
+					<a href="#">Вернуться к персональной странице</a>
+				</p>
+
+			</form>
+
+		</div>
 	</main>
 
 	<footer class="footer">
