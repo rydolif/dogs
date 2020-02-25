@@ -28,6 +28,12 @@
 		color: #fff
 		opacity
 
+	&:disabled,
+	&[disabled]
+		border: 2px solid rgba($text, .4)
+		background-color: transparent
+		color: rgba($text, .4)
+		cursor: default
 
 	&--transparent
 		background-color: transparent
@@ -40,5 +46,8 @@
 		&:hover,
 		&:focus
 			background-color: #111
+
+	&--no-border
+		border-color: transparent
 		
 

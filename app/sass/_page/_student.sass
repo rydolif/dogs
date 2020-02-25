@@ -488,6 +488,9 @@
 	&--edit
 		padding-top: 95px
 
+		.student__nav_name
+			width: 100%
+
 		&__form
 			margin-bottom: 55px
 
@@ -554,6 +557,13 @@
 
 		&__btn
 			margin-bottom: 40px
+			display: flex
+
+			button
+				margin-right: 10px
+
+				&:last-child
+					margin-right: 0
 
 		label
 			margin-bottom: 0
@@ -648,6 +658,7 @@
 			position: relative
 			margin-bottom: 40px
 
+		div
 			&:last-child
 				margin-bottom: 0
 
@@ -678,6 +689,41 @@
 					color: #fff
 					background-color: $accent--hover
 
+		&__clear
+			display: block
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translate(0, -50%)
+			width: 12px
+			height: 12px
+			background-color: transparent
+			border: none
+
+			&:hover,
+			&:focus
+				&::before,
+				&::after
+					background-color: $accent
+
+			&::before,
+			&::after
+				content: ''
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				display: block
+				width: 14px
+				height: 2px
+				background-color: rgba($text, .4)
+				transition: all .6s
+
+			&::before
+				transform: translate(-50%, -50%) rotate(-45deg)
+
+			&::after
+				transform: translate(-50%, -50%) rotate(45deg)
 
 
 @media only screen and (max-width: 1250px)
@@ -918,6 +964,8 @@
 						font-size: 14px
 
 		&--edit
+			padding-top: 70px
+
 			&__info
 				justify-content: center
 

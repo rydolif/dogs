@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Изменение профиля</title>
+	<title>Изменение профиля (Мои собаки добавить)</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -129,9 +129,43 @@
 				</div>
 			</form>
 
+			<p class="student__nav_name">Мои собаки</p>
+
 			<form class="student--edit__form student__nav student--info__nav form">
 
-				<p class="student__nav_name">Мои собаки</p>
+				<a href="#" class="student__nav_avatar student--edit__img">
+					<img src="img/start/dogs.svg" alt="">
+					<button>Добавить фото</button>
+				</a>
+				<div class="student--edit__delet modal__line">
+					<input type="text" name="dogs_name" id="dogs_name" placeholder=" ">
+					<label for="dogs_name" class="label">Кличка</label>
+					<button>Удалить СОБАКУ</button>
+				</div>
+				<div class="modal__line">
+					<input type="email" name="breed" id="breed" placeholder=" " required>
+					<label for="breed" class="label">Email</label>
+				</div>
+				<div class="modal__line">
+					<select name="sex" id="sex" >
+						<option value="">Кабель</option>
+						<option value="">Сука</option>
+					</select>
+					<label for="sex" class="label">Пол</label>
+				</div>
+				<div class="modal__line">
+					<input type="date" name="date" id="date" placeholder=" " required>
+					<label for="date" class="label">Дата рождения</label>
+				</div>
+
+				<p class="student--edit__btn">
+					<button class="btn" disabled>ДОБАВИТЬ СОБАКУ</button>
+					<button class="btn btn--transparent btn--no-border">Отменить</button>
+				</p>
+			</form>
+
+			<form class="student--edit__form student__nav student--info__nav form">
+
 				<p class="student--edit__btn">
 					<a href="#" class="btn btn--transparent">ДОБАВИТЬ СОБАКУ</a>
 				</p>
@@ -165,7 +199,6 @@
 					<span>Изменения сохранены</span>
 					<a href="#">Вернуться к персональной странице</a>
 				</p>
-
 			</form>
 
 		</div>
