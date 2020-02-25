@@ -1,6 +1,6 @@
 
 .student
-	background-color: #E5E5E5
+	background-color: #f4f3f3
 	padding: 140px 0
 
 	&__container
@@ -82,6 +82,13 @@
 		&_description
 			margin-bottom: 20px
 
+			a
+				color: $accent
+
+				&:hover,
+				&:focus
+					color: $accent--hover
+
 		&_soc
 			display: flex
 			flex-wrap: wrap
@@ -109,6 +116,14 @@
 						opacity: 1
 		
 		&_dogs
+
+			a
+				color: $accent
+				font-size: 16px
+
+				&:hover,
+				&:focus
+					color: $accent--hover
 
 			h4
 				text-transform: uppercase
@@ -146,6 +161,23 @@
 	&__content
 		background-color: #fff
 		margin-bottom: 40px
+
+		&--empty
+			border: 2px solid #fff
+			background-color: rgba(#918487, .01)
+			padding: 100px 20px
+			font-size: 34px
+			color: rgba($text, .2)
+			text-align: center
+
+			p
+				margin-bottom: 20px
+
+			.btn
+				font-size: 12px
+				height: 35px
+				margin: 0 auto
+
 
 		&:last-child
 			margin-bottom: 0
@@ -316,7 +348,6 @@
 					padding: 5px 15px
 					border-radius: 20px
 					margin-left: 10px
-
 
 		&_members
 
@@ -558,8 +589,9 @@
 		&__btn
 			margin-bottom: 40px
 			display: flex
+			flex-wrap: wrap
 
-			button
+			.btn
 				margin-right: 10px
 
 				&:last-child
@@ -786,6 +818,7 @@
 
 @media only screen and (max-width: 992px)
 	.student
+		padding-top: 80px
 
 		&__nav
 			&_avatar
@@ -869,6 +902,11 @@
 			&_dogs div
 				justify-content: center
 
+		&__content
+			&--empty
+				padding: 40px 20px
+				font-size: 28px
+
 		&__main
 			width: 100%
 
@@ -925,6 +963,11 @@
 @media only screen and (max-width: 480px)
 	.student
 		&__content
+
+			&--empty
+				padding: 40px 20px
+				font-size: 22px
+
 			&_table
 
 				tr
@@ -968,4 +1011,13 @@
 
 			&__info
 				justify-content: center
+
+			&__btn
+				.btn
+					margin:
+						right: 0
+						bottom: 10px
+
+					&:last-child
+						margin-bottom: 0
 
