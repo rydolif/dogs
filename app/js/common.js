@@ -10,11 +10,13 @@ $(function() {
     if ($(this).parent().hasClass('active')) {
       $(this).parent().removeClass('active');
       $(".block__content").slideUp("slow");
+      $(this).text("Показать описание");
     }
     else {
       $(".active .block__content").slideUp("slow");
       $(".active").removeClass('active');
       $(this).parent().addClass('active');
+      $(this).text("Скрыть описание");
       $(".active .block__content").slideDown("slow");
     }
   });

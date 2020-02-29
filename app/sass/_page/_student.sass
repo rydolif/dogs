@@ -1193,13 +1193,40 @@
 				&::after
 					content: ''
 					position: absolute
-					top: 7px
+					top: 0
 					right: -20px
+					transform: translate(0, 7px)
 					border-bottom: 5px solid transparent
 					border-left: 5px solid transparent
 					border-right: 5px solid transparent
 					border-top: 5px solid $accent
-					
+					transition: all .6s
+
+		.active
+			.student--materials__task_more
+				&::after
+					transform: translate(0, 0) rotate(-180deg)
+
+
+	&--webinar
+
+		iframe
+			margin-bottom: 25px
+
+		&__info
+			float: right
+			text-align: right
+			margin-left: 10px
+
+			span
+				display: block
+				margin-bottom: 5px
+
+			b
+				font-size: 32px
+				font-weight: 400
+				line-height: 1.2
+				
 
 @media only screen and (max-width: 1250px)
 	.student
@@ -1315,7 +1342,15 @@
 
 					&-footer
 						padding: 10px 20px
+		
+		&--webinar
 
+			iframe
+				margin-bottom: 15px
+
+			&__info
+				b
+					font-size: 24px
 
 @media only screen and (max-width: 992px)
 	.student
@@ -1467,6 +1502,16 @@
 			&__content
 				width: 100%
 
+		&--webinar
+
+			iframe
+				margin-bottom: 15px
+
+			&__info
+				b
+					font-size: 20px
+					font-weight: 700
+
 
 @media only screen and (max-width: 578px)
 	.student
@@ -1498,16 +1543,27 @@
 			iframe
 				height: 250px
 
-			&__theme_item
-				&-link
-					margin-top: 0
+			&__theme
+				&_form
+					padding: 10px
+				&_item
+					&-link
+						margin-top: 0
 
-				&-header
-					flex-wrap: wrap
+					&-header
+						flex-wrap: wrap
 
-					p
-						width: 100%
-						margin-bottom: 5px !important
+						p
+							width: 100%
+							margin-bottom: 5px !important
+
+			&__content
+				&_wrap
+					ul
+						margin-bottom: 15px
+
+					&-main
+						padding: 10px
 
 
 @media only screen and (max-width: 480px)
