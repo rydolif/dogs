@@ -1,5 +1,24 @@
 $(function() {
 
+  
+//---------------------------tabs mosal-----------------------
+  $(".block__content").slideUp("slow");
+  // $(".block").first().addClass('active');
+  $(".active .block__content").slideDown("slow");
+
+  $(".block__header").on("click", function(){
+    if ($(this).parent().hasClass('active')) {
+      $(this).parent().removeClass('active');
+      $(".block__content").slideUp("slow");
+    }
+    else {
+      $(".active .block__content").slideUp("slow");
+      $(".active").removeClass('active');
+      $(this).parent().addClass('active');
+      $(".active .block__content").slideDown("slow");
+    }
+  });
+
 //---------------------------tabs mosal-----------------------
   $('.tabs__wrap').hide();
   $('.tabs__wrap:first').show();

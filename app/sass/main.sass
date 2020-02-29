@@ -692,6 +692,97 @@
 
 
 
+
+.avatar
+	position: relative
+	width: 40px
+	height: 40px
+	border-radius: 50%
+	overflow: hidden
+	margin-right: 15px
+
+	img, svg
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		max-width: 100%
+
+	svg
+		z-index: 1
+
+.toggle
+	position: relative
+	display: block
+	width: 30px
+	height: 20px
+	border-radius: 10px
+	cursor: pointer
+	-webkit-tap-highlight-color: transparent
+	transform: translate3d(0,0,0)
+	margin-bottom: 3px
+
+	&::before
+		content: ""
+		position: relative
+		top: 3px
+		left: 0px
+		width: 34px
+		height: 14px
+		display: block
+		background-color: rgba($text, .1)
+		border-radius: 8px
+		transition: background .2s ease
+
+	span
+		position: absolute
+		top: 4px
+		left: 5px
+		width: 12px
+		height: 12px
+		display: block
+		background: #fff
+		border-radius: 10px
+		box-shadow: 0 3px 8px rgba($blue, .5)
+		transition: all .2s ease
+
+		&::before
+			content: ""
+			position: absolute
+			display: block
+			margin: -18px
+			width: 56px
+			height: 56px
+			background: rgba($accent, .5)
+			border-radius: 50%
+			transform: scale(0)
+			opacity: 1
+			pointer-events: none
+
+
+#cbx:checked + .toggle
+	&::before
+		background: $blue
+
+	span
+		transform: translateX(15px)
+		transition: all .2s cubic-bezier(.8,.4,.3,1.25), background .15s ease
+		box-shadow: 0 3px 8px rgba($accent, .2)
+
+		&::before
+			transform: scale(1)
+			opacity: 0
+			transition: all .4s ease
+			background: $blue
+
+//centering toggle
+.center
+	position: absolute
+	top: calc(50% - 10px)
+	left: calc(50% - 20px)
+
+
+
 //-----------page--------------
 @import "_page/index"
 @import "_page/courses"
