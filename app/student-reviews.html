@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Войти</title>
+	<title>Базовый курс (Вебинар)</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -41,6 +41,12 @@
 					</li>
 					<li><span></span></li>
 					<li><a href="#">Мои курсы</a></li>
+					<li>
+						<a href="#" class="header__nav_logout">
+							<svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.4"><rect x="5.25684" y="6" width="7.99995" height="2" fill="#1D2025"/><path d="M12.2568 11V3L16.2568 7L12.2568 11Z" fill="#1D2025"/><rect x="0.256836" width="8.99996" height="2" fill="#1D2025"/><rect x="0.256836" y="12" width="8.99996" height="2" fill="#1D2025"/><rect x="0.256836" width="2.00002" height="14" fill="#1D2025"/></g>
+							</svg>
+						</a>
+					</li>
 				</ul>
 			</nav>
 
@@ -56,48 +62,104 @@
 				</div>
 			</div>
 
+			
 		</div>
 	</header>
 
-	<main class="main">
+	<main class="main student--edit student--webinar">
+		<div class="student__container container">
 
-		<section class="login">
-			<div class="container">
+			<ul class="courses-hero__grums">
+				<li><a href="#">Персональная страница </a></li>
+				<li>/</li>
+			</ul>
 
-				<div class="login__list">
-					<a href="main.html" class="btn">Главная</a>
-					<a href="login.html" class="btn">Вход</a>
+			<h2>Базовый курс — продвинутый №8</h2>
+
+			<div class="student--materials__wrap">
+
+				<div class="student--materials__nav">
+					<div class="student--materials__nav_courses">
+						<a href="#" class="student--materials__nav_courses-link">
+							<span class="student--materials__nav_courses-header">
+								<b>Тема №1 <span>6</span></b>
+								<time datetime="1969-07-16">12 Дек 2018</time>
+							</span>
+							<p>Знакомство</p>
+						</a>
+						<a href="#" class="student--materials__nav_courses-link student--materials__nav_courses-link--active">
+							<span class="student--materials__nav_courses-header">
+								<b>вебинар<span>38</span></b>
+								<time datetime="1969-07-16">14 Дек 2018 19:00 МСК</time>
+							</span>
+							<p>Соревнования и испытания. Что это? Зачем? И как?</p>
+						</a>
+						<a href="#" class="student--materials__nav_courses-link">
+							<span class="student--materials__nav_courses-header">
+								<b>Тема №2 <span>121</span></b>
+								<time datetime="1969-07-16">12 Дек 2018</time>
+							</span>
+							<p><b>«Рядом» + «Комплекс»</b></p>
+						</a>
+						<a href="#" class="student--materials__nav_courses-link student--materials__nav_courses-link--off">
+							<span class="student--materials__nav_courses-header">
+								<b>Тема №3 </b>
+							</span>
+							<p>«Апорт» + начало в команде «Место»</p>
+						</a>
+						<a href="#" class="student--materials__nav_courses-link student--materials__nav_courses-link--off">
+							<span class="student--materials__nav_courses-header">
+								<b>Тема №4 </b>
+							</span>
+							<p>Сбор Схемы. Рапорт.</p>
+						</a>
+						<a href="#" class="student--materials__nav_courses-link student--materials__nav_courses-link--off">
+							<span class="student--materials__nav_courses-header">
+								<b>Тема №5 </b>
+							</span>
+							<p>Команда «Место»</p>
+						</a>
+						<a href="#" class="student--materials__nav_courses-link student--materials__nav_courses-link--off">
+							<span class="student--materials__nav_courses-header">
+								<b>Тема №6 </b>
+							</span>
+							<p>Подведение итогов</p>
+						</a>
+					</div>
+					<ul class="student--materials__nav_list">
+						<li><a href="#">Подробно о курсе</a></li>
+						<li><a href="#">Отзыв о курсе</a></li>
+						<li><a href="#">Участники</a></li>
+						<li><a href="#">Группа курса Вконтакте <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg"><g><path d="M11 0H6L11 5V0Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.29297 5.29297L9.29297 0.292969L10.7072 1.70718L5.70718 6.70718L4.29297 5.29297Z"/><path d="M0 3H2V11H0V3Z"/><path d="M8 9L8 11L-8.74228e-08 11L0 9L8 9Z"/></g></svg></a></li>			     
+					</ul>
 				</div>
 
-				<div class="login__list">
-					<h3>Курсы</h3>
-					<a href="courses.html" class="btn">Учитесь онлайн с Фандогс!</a>
-					<a href="courses-future.html" class="btn">Профи — магистратура</a>
-					<a href="courses-online.html" class="btn">Прогулки без проблем!</a>
-					<a href="courses-record.html" class="btn">Секреты мотивации</a>
-					<a href="courses-start.html" class="btn">Базовый курс — продвинутый</a>
-					<a href="feedback.html" class="btn">Отзывы и результаты наших учеников</a>
+				<div class="student--materials__content tabs">
+					<h3>Отзыв о курсе</h3>
+
+					<form class="student--edit__form student__nav student--info__nav form">
+
+						<a href="#" class="student__nav_avatar student--edit__img">
+							<img src="img/start/dogs.svg" alt="">
+							<button>Добавить фото</button>
+						</a>
+						
+						<div class="modal__line">
+							<input type="text" name="text" id="text" placeholder=" " required>
+							<label for="text" class="label">Текст отзыва</label>
+							<span class="modal__saved">Изменения сохранены</span>
+						</div>
+
+						<p class="student--edit__btn">
+							<button class="btn">Добавить отзыв</button>
+						</p>
+					</form>
+
 				</div>
 
-				<div class="login__list">
-					<h3>Профиль</h3>
-					<a href="student.html" class="btn">Профиль студента</a>
-					<a href="student-info.html" class="btn">Информация о студенте</a>
-					<a href="student-edit.html" class="btn">Изменение профиля</a>
-					<a href="student-edit-2.html" class="btn">Изменение профиля (Мои собаки добавить)</a>
-					<a href="student-zero.html" class="btn">Изменение профиля (Пустой профиль)</a>
-					<a href="student-zero-courses.html" class="btn">Изменение профиля (Нет курсов)</a>
-					<a href="student-materials.html" class="btn">Базовый курс — продвинутый №8</a>
-					<a href="student-webinar.html" class="btn">Базовый курс (Вебинар)</a>
-					<a href="student-members-view.html" class="btn">Базовый курс (Профиль)</a>
-					<a href="student-reviews.html" class="btn">Базовый курс (Отзывы)</a>
-				</div>
-				
 			</div>
-		</section>
 
-	</div>
-
+		</div>
 	</main>
 
 	<footer class="footer">

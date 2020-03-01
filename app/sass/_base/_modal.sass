@@ -156,7 +156,24 @@
 				font-weight: 400
 				color: #918487
 				text-transform: uppercase
-				
+	
+	&__saved
+		position: absolute
+		right: 0
+		top: 0
+		line-height: 1
+		font-size: 12px
+
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			right: 105%
+			transform: translate(0, 0) rotate(-45deg)
+			width: 14px
+			height: 6px
+			border-bottom: 1px solid $green
+			border-left: 1px solid $green
 
 
 .popup_visible .modal
