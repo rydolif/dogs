@@ -94,41 +94,8 @@ input[type=number]::-webkit-outer-spin-button
 
 button
 	transition: all .6s
+	outline: none
 
-
-label
-	position: relative
-	cursor: pointer
-	margin-bottom: 0
-	margin-right: 0
-	background: #DBD3D2
-	border-radius: 10px
-	width: 30px
-	height: 16px
-	transition: all .6s
-
-	&::after
-		content: ''
-		position: absolute
-		left: 0
-
-	&::after
-		width: 10px
-		height: 10px
-		border-radius: 50%
-		background: #fff
-		left: 3px
-		top: 3px
-		transition: all .6s
-
-input[type="checkbox"]
-	display: none
-
-input[type="checkbox"]:checked + label
-	background: $blue
-
-	&::after
-		left: 16px
-		
-input[type="checkbox"] + label::after
-	left: 4px
+	&:hover,
+	&:focus
+		outline: none
