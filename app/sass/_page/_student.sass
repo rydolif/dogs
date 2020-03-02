@@ -607,7 +607,7 @@
 			.modal__line
 				position: relative
 				margin-bottom: 40px
-				
+
 				.btn
 					height: 32px
 					font-size: 12px
@@ -1357,7 +1357,6 @@
 						p
 							margin-bottom: 5px
 
-
 			&__task
 				iframe
 					margin-bottom: 15px
@@ -1372,6 +1371,8 @@
 						font-size: 18px
 
 			&__content
+				width: 72%
+
 				&_tabs
 					margin-bottom: 15px
 
@@ -1392,8 +1393,12 @@
 
 					&-footer
 						padding: 10px 20px
-
 		
+		&--members__item_avatar
+			width: 100px
+			height: 100px
+			margin-right: 15px
+
 		&--webinar
 
 			iframe
@@ -1451,14 +1456,20 @@
 			iframe
 				height: 280px
 
+			&__content
+				width: 68%
+
 			&__nav
-				width: 31%
+				width: 30%
 
 				&_courses
 					margin-bottom: 20px
 
 					&-link
 						padding: 10px
+
+					&-header span
+						margin-left: 5px
 
 				&_list
 					margin-bottom: 20px
@@ -1496,13 +1507,32 @@
 				font-size: 18px
 
 			&__item
+				margin-bottom: 30px
 
 				p, h4
 					margin-bottom: 5px !important
 
 				&_avatar
-					width: 100px !important
-					height: 100px !important
+					width: 70px !important
+					height: 70px !important
+
+			&__step
+
+				&_item
+					width: 30px
+					height: 30px
+					margin-right: 10px
+
+					span
+						width: 20px
+						height: 20px
+						font-size: 8px
+
+					b
+						font-size: 14px
+
+				&_final
+					margin-top: 15px
 
 
 @media only screen and (max-width: 768px)
@@ -1747,19 +1777,6 @@
 					width: 45px !important
 					height: 45px !important
 
-			&__step
 
-				&_item
-					width: 30px
-					height: 30px
-					margin-right: 10px
-
-					span
-						width: 20px
-						height: 20px
-						font-size: 8px
-
-					b
-						font-size: 14px
 
 

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Базовый курс (Участники)</title>
+	<title>Учитель (Участники)</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -65,9 +65,41 @@
 			
 		</div>
 	</header>
+		
+	<div class="teacher__nav">
+
+		<button class="teacher__hamburger" type="button">
+			<span class="teacher__hamburger_item"></span>
+		</button>
+
+		<div class="teacher__nav_header">
+			<div class="avatar teacher__nav_header--avatar">
+				<img src="img/start/avatar12.png" alt="">
+			</div>
+			<p>Мария Фандеева</p>
+			<b>Тренер</b>
+		</div>
+		<ul class="teacher__nav_list">
+			<li>
+				<a href="teacher-active.html">Активные курсы <span>127</span></a>
+			</li>
+			<li>
+				<a href="teacher-archive.html">Архив курсов</a>
+			</li>
+			<li>
+				<a href="#">Шаблоны курсов</a>
+			</li>
+			<li>
+				<a href="#">Участники</a>
+			</li>
+			<li>
+				<a href="#">Отзывы <span>2</span></a>
+			</li>
+		</ul>
+	</div>
 
 	<main class="main student--materials">
-		<div class="student__container container">
+		<div class="teacher__container container">
 
 			<ul class="courses-hero__grums">
 				<li><a href="#">Персональная страница </a></li>
@@ -80,14 +112,20 @@
 
 				<div class="student--materials__nav">
 					<div class="student--materials__nav_courses">
-						<a href="#" class="student--materials__nav_courses-link">
-							<span class="student--materials__nav_courses-header">
+						<a href="#" class="student--materials__nav_courses-link student--materials__nav_courses-link--active">
+							<div class="student--materials__nav_courses-header">
 								<b>Тема №1 <span>6</span></b>
-								<time datetime="1969-07-16">12 Дек 2018</time>
-							</span>
+								<div class="teacher--active__toggle">
+									<time datetime="1969-07-16">12 Дек 2018</time>
+									<form class="teacher--active__content_form">
+										<input type="checkbox" id="check1">
+										<label  for="check1" class="checkbox"></label>
+									</form>
+								</div>
+							</div>
 							<p>Знакомство</p>
 						</a>
-						<a href="#" class="student--materials__nav_courses-link student--materials__nav_courses-link--active">
+						<a href="#" class="student--materials__nav_courses-link">
 							<span class="student--materials__nav_courses-header">
 								<b>вебинар<span>38</span></b>
 								<time datetime="1969-07-16">14 Дек 2018 19:00 МСК</time>
@@ -95,34 +133,68 @@
 							<p>Соревнования и испытания. Что это? Зачем? И как?</p>
 						</a>
 						<a href="#" class="student--materials__nav_courses-link">
-							<span class="student--materials__nav_courses-header">
+							<div class="student--materials__nav_courses-header">
 								<b>Тема №2 <span>121</span></b>
-								<time datetime="1969-07-16">12 Дек 2018</time>
-							</span>
+								<div class="teacher--active__toggle">
+									<time datetime="1969-07-16">12 Дек 2018</time>
+									<form class="teacher--active__content_form">
+										<input type="checkbox" id="check2">
+										<label  for="check2" class="checkbox"></label>
+									</form>
+								</div>
+							</div>
 							<p><b>«Рядом» + «Комплекс»</b></p>
 						</a>
 						<a href="#" class="student--materials__nav_courses-link student--materials__nav_courses-link--off">
-							<span class="student--materials__nav_courses-header">
+							<div class="student--materials__nav_courses-header">
 								<b>Тема №3 </b>
-							</span>
+								<div class="teacher--active__toggle">
+									<time datetime="1969-07-16">12 Дек 2018</time>
+									<form class="teacher--active__content_form">
+										<input type="checkbox" id="check3">
+										<label  for="check3" class="checkbox"></label>
+									</form>
+								</div>
+							</div>
 							<p>«Апорт» + начало в команде «Место»</p>
 						</a>
 						<a href="#" class="student--materials__nav_courses-link student--materials__nav_courses-link--off">
-							<span class="student--materials__nav_courses-header">
+							<div class="student--materials__nav_courses-header">
 								<b>Тема №4 </b>
-							</span>
+								<div class="teacher--active__toggle">
+									<time datetime="1969-07-16">12 Дек 2018</time>
+									<form class="teacher--active__content_form">
+										<input type="checkbox" id="check4">
+										<label  for="check4" class="checkbox"></label>
+									</form>
+								</div>
+							</div>
 							<p>Сбор Схемы. Рапорт.</p>
 						</a>
 						<a href="#" class="student--materials__nav_courses-link student--materials__nav_courses-link--off">
-							<span class="student--materials__nav_courses-header">
+							<div class="student--materials__nav_courses-header">
 								<b>Тема №5 </b>
-							</span>
+								<div class="teacher--active__toggle">
+									<time datetime="1969-07-16">12 Дек 2018</time>
+									<form class="teacher--active__content_form">
+										<input type="checkbox" id="check5">
+										<label  for="check5" class="checkbox"></label>
+									</form>
+								</div>
+							</div>
 							<p>Команда «Место»</p>
 						</a>
 						<a href="#" class="student--materials__nav_courses-link student--materials__nav_courses-link--off">
-							<span class="student--materials__nav_courses-header">
+							<div class="student--materials__nav_courses-header">
 								<b>Тема №6 </b>
-							</span>
+								<div class="teacher--active__toggle">
+									<time datetime="1969-07-16">12 Дек 2018</time>
+									<form class="teacher--active__content_form">
+										<input type="checkbox" id="checkbox11">
+										<label  for="checkbox11" class="checkbox"></label>
+									</form>
+								</div>
+							</div>
 							<p>Подведение итогов</p>
 						</a>
 					</div>
@@ -132,6 +204,8 @@
 						<li><a href="#">Участники</a></li>
 						<li><a href="#">Группа курса Вконтакте <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg"><g><path d="M11 0H6L11 5V0Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.29297 5.29297L9.29297 0.292969L10.7072 1.70718L5.70718 6.70718L4.29297 5.29297Z"/><path d="M0 3H2V11H0V3Z"/><path d="M8 9L8 11L-8.74228e-08 11L0 9L8 9Z"/></g></svg></a></li>			     
 					</ul>
+					<a href="#" class="btn btn--transparent btn--nav btn--min">редактировать курс</a>
+					<a href="#" class="btn btn--transparent btn--nav btn--min">Переместить в архив</a>
 				</div>
 
 				<div class="student--materials__content student--members">
@@ -151,25 +225,25 @@
 								</p>
 								<p class="student--members__item_sub-title"><b>Задания по темам </b></p>
 								<div class="student--members__step">
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>1</b>
 										<span>10</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>2</b>
 										<span>9</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>3</b>
 										<span>10</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>4</b>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>5</b>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>6</b>
 									</a>
 								</div>
@@ -186,25 +260,25 @@
 								</p>
 								<p class="student--members__item_sub-title"><b>Задания по темам </b></p>
 								<div class="student--members__step">
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>1</b>
 										<span>10</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>2</b>
 										<span>9</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>3</b>
 										<span>10</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>4</b>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>5</b>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>6</b>
 									</a>
 								</div>
@@ -221,25 +295,25 @@
 								</p>
 								<p class="student--members__item_sub-title"><b>Задания по темам </b></p>
 								<div class="student--members__step">
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>1</b>
 										<span>10</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>2</b>
 										<span>9</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>3</b>
 										<span>10</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>4</b>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>5</b>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>6</b>
 									</a>
 								</div>
@@ -256,25 +330,25 @@
 								</p>
 								<p class="student--members__item_sub-title"><b>Задания по темам </b></p>
 								<div class="student--members__step">
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>1</b>
 										<span>10</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>2</b>
 										<span>9</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>3</b>
 										<span>10</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>4</b>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>5</b>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>6</b>
 									</a>
 								</div>
@@ -291,25 +365,25 @@
 								</p>
 								<p class="student--members__item_sub-title"><b>Задания по темам </b></p>
 								<div class="student--members__step">
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>1</b>
 										<span>10</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>2</b>
 										<span>9</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>3</b>
 										<span>10</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>4</b>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>5</b>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>6</b>
 									</a>
 								</div>
@@ -326,27 +400,27 @@
 								</p>
 								<p class="student--members__item_sub-title"><b>Задания по темам </b></p>
 								<div class="student--members__step">
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>1</b>
 										<span>10</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>2</b>
 										<span>9</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item student--members__step_active">
+									<a href="#" class="task_open student--members__step_item student--members__step_active">
 										<b>3</b>
 										<span>10</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>4</b>
 										<span>9</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>5</b>
 										<span>9</span>
 									</a>
-									<a hraf="#" class="task_open student--members__step_item">
+									<a href="#" class="task_open student--members__step_item">
 										<b>6</b>
 										<span>9</span>
 									</a>
