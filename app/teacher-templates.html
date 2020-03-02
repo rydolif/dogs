@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Информация о студенте (Пустой профиль)</title>
+	<title>Учитель (Шаблоны курсов)</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -62,83 +62,218 @@
 				</div>
 			</div>
 
+			
 		</div>
 	</header>
+		
+	<div class="teacher__nav">
 
-	<main class="main student--edit">
-		<div class="student__container container">
+		<button class="teacher__hamburger" type="button">
+			<span class="teacher__hamburger_item"></span>
+		</button>
 
-			<ul class="courses-hero__grums">
-				<li><a href="#">Все курсы и вебинары </a></li>
-				<li>/</li>
-			</ul>
+		<div class="teacher__nav_header">
+			<div class="avatar teacher__nav_header--avatar">
+				<img src="img/start/avatar12.png" alt="">
+			</div>
+			<p>Мария Фандеева</p>
+			<b>Тренер</b>
+		</div>
+		<ul class="teacher__nav_list">
+			<li>
+				<a href="teacher-active.html">Активные курсы <span>127</span></a>
+			</li>
+			<li>
+				<a href="teacher-archive.html">Архив курсов</a>
+			</li>
+			<li>
+				<a href="#">Шаблоны курсов</a>
+			</li>
+			<li>
+				<a href="#">Участники</a>
+			</li>
+			<li>
+				<a href="#">Отзывы <span>2</span></a>
+			</li>
+		</ul>
+	</div>
 
-			<h2>Изменение профиля</h2>
+	<main class="main teacher--active">
+		<div class="teacher__container container">
 
-			<form class="student--edit__form student__nav student--info__nav form">
+			<div class="teacher--active__header">
+				<h2>Шаблоны курсов</h2>
+				<a href="#"><span class="teacher--active__pluse"></span>новый шаблон</a>
+			</div>
 
-				<p class="student--edit__info">
-					<span>Изменения сохранены</span>
-					<a href="#">Вернуться к персональной странице</a>
-				</p>
+			<div class="teacher--active__content student__content">
+				<div class="teacher--active__content_header student__content_header">
+					<span class="teacher--active__content_header--label student__content_header--label">В процессе</span>
+					<h3>Шаблон | Базовый курс — продвинутый</h3>
+					<p>
+						<b>Длительность</b>
+						<span>6 недель</span>
+					</p>
+				</div>
+				<div class="student__content_wrap">
+					<table class="teacher--active__content_table student__content_table">
+						<tr>
+							<th></th>
+							<th>Тема</th>
+							<th>Материалы</th>
+							<th>Задание</th>
+						</tr>
+						<tr>
+							<td>Тема №1</td>
+							<td>
+								<p class="student__content_table--title">Знакомство</p>
+							</td>
+							<td>
+								3
+							</td>
+							<td>
+								<span class="check"></span>
+							</td>
+						</tr>
+						<tr>
+							<td>Вебинар</td>
+							<td>
+								<p class="student__content_table--title">Соревнования и испытания. Что это? Зачем? И как?</p>
+							</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Тема №2</td>
+							<td>
+								<p class="student__content_table--title">«Рядом» + «Комплекс»</p>
+							</td>
+							<td>4</td>
+							<td><span class="check"></span></td>
+						</tr>
+						<tr>
+							<td>Тема №3</td>
+							<td>
+								<p class="student__content_table--title">«Апорт» + начало в команде «Место»</p>
+							</td>
+							<td>4</td>
+							<td><span class="check"></span></td>
+						</tr>
+						<tr>
+							<td>Тема №4</td>
+							<td>
+								<p class="student__content_table--title">Сбор Схемы. Рапорт.</p>
+							</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Тема №5</td>
+							<td>
+								<p class="student__content_table--title">Команда «Место»</p>
+							</td>
+							<td>2</td>
+							<td><span class="check"></span></td>
+						</tr>
+						<tr>
+							<td>Тема №6</td>
+							<td>
+								<p class="student__content_table--title">Подведение итогов</p>
+							</td>
+							<td>3</td>
+							<td><span class="check"></span></td>
+						</tr>
+					</table>
+					<div class="teacher--active__content_btn">
+						<a href="#" class="btn btn--transparent btn--min">редактировать шаблон</a>
+					</div>
+				</div>
+			</div>
 
-				<div class="student__nav_avatar student--edit__img">
-					<img src="img/start/avatar_zero.svg" alt="">
-					<button>Добавить фото</button>
+			<div class="teacher--active__content student__content">
+				<div class="teacher--active__content_header student__content_header">
+					<span class="teacher--active__content_header--label student__content_header--label">В процессе</span>
+					<h3>Шаблон | Базовый курс — начало</h3>
+					<p>
+						<b>Длительность</b>
+						<span>6 недель</span>
+					</p>
 				</div>
+				<div class="student__content_wrap">
+					<table class="teacher--active__content_table student__content_table">
+						<tr>
+							<th></th>
+							<th>Тема</th>
+							<th>Материалы</th>
+							<th>Задание</th>
+						</tr>
+						<tr>
+							<td>Тема №1</td>
+							<td>
+								<p class="student__content_table--title">Знакомство</p>
+							</td>
+							<td>
+								3
+							</td>
+							<td>
+								<span class="check"></span>
+							</td>
+						</tr>
+						<tr>
+							<td>Вебинар</td>
+							<td>
+								<p class="student__content_table--title">Основы дрессировки</p>
+							</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Тема №2</td>
+							<td>
+								<p class="student__content_table--title">Наведение. Что это, зачем и как пользоваться</p>
+							</td>
+							<td>4</td>
+							<td><span class="check"></span></td>
+						</tr>
+						<tr>
+							<td>Тема №3</td>
+							<td>
+								<p class="student__content_table--title">Развитие тела и интеллекта собаки</p>
+							</td>
+							<td>4</td>
+							<td><span class="check"></span></td>
+						</tr>
+						<tr>
+							<td>Тема №4</td>
+							<td>
+								<p class="student__content_table--title">Смена состояний</p>
+							</td>
+							<td>5</td>
+							<td><span class="scheck"></span></td>
+						</tr>
+						<tr>
+							<td>Тема №5</td>
+							<td>
+								<p class="student__content_table--title">Команда «Ко мне»</p>
+							</td>
+							<td>4</td>
+							<td><span class="check"></span></td>
+						</tr>
+						<tr>
+							<td>Тема №6</td>
+							<td>
+								<p class="student__content_table--title">Команда «Рядом» и подведение итогов</p>
+							</td>
+							<td>6</td>
+							<td><span class="check"></span></td>
+						</tr>
+					</table>
+					<div class="teacher--active__content_btn">
+						<a href="#" class="btn btn--transparent btn--min">редактировать шаблон</a>
+					</div>
+				</div>
+			</div>
 
-				<p class="student__nav_name">Личная информация</p>
-
-				<div class="modal__line">
-					<input type="text" name="fullname" id="fullname" placeholder=" ">
-					<label for="fullname" class="label">Имя и фамилия</label>
-					<button class="student--edit__clear"></button>
-				</div>
-				<div class="modal__line">
-					<textarea name="info" id="info" placeholder=" "></textarea>
-					<label for="info" class="label">Расскажите о себе</label>
-				</div>
-				<div class="modal__line">
-					<input type="email" name="email" id="email" placeholder=" " required>
-					<label for="email" class="label">Email</label>
-					<label for="">Этот адрес используется для входа на сайт. Для изменения обратитесь к администратору.</label>
-				</div>
-				<div class="student--edit__btn">
-					<button class="btn btn--transparent">Изменить пароль</button>
-				</div>
-				<div class="modal__line">
-					<input type="text" name="vk" id="vk" placeholder=" " required>
-					<label for="vk" class="label">Вконтакте</label>
-				</div>
-				<div class="modal__line">
-					<input type="tel" name="tel" id="tel" placeholder=" " required>
-					<label for="tel" class="label">Телефон</label>
-				</div>
-				<div class="modal__line">
-					<input type="text" name="facebook" id="facebook" placeholder=" " required>
-					<label for="facebook" class="label">Facebook</label>
-				</div>
-				<div class="modal__line">
-					<input type="text" name="instagram" id="instagram" placeholder=" " required>
-					<label for="instagram" class="label">Instagram</label>
-				</div>
-				<div class="modal__line">
-					<input type="text" name="link" id="link" placeholder=" " required>
-					<label for="link" class="label">Ссылка на сайт</label>
-				</div>
-			</form>
-
-			<p class="student__nav_name">Мои собаки</p>
-
-			<form class="student--edit__form student__nav student--info__nav form">
-				<p class="student--edit__btn">
-					<button class="btn btn--transparent">ДОБАВИТЬ СОБАКУ</button>
-				</p>
-				<p class="student--edit__info">
-					<span>Изменения сохранены</span>
-					<a href="#">Вернуться к персональной странице</a>
-				</p>
-			</form>
 
 		</div>
 	</main>
