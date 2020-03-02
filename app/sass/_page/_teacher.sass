@@ -138,7 +138,6 @@
 
 		h2
 			font-weight: 700
-			// margin-bottom: 0 !important
 
 		&__pluse
 			position: relative
@@ -183,6 +182,9 @@
 			flex-wrap: wrap
 			width: 100%
 			margin-bottom: 40px
+
+			h2
+				margin-bottom: 0
 
 			a
 				display: flex
@@ -261,11 +263,12 @@
 				padding-right: 45px
 	
 	&--edit
-
-		button
-			background-color: transparent
-			border: none
-			padding: 0
+	
+		.modal__line
+			button
+				background-color: transparent
+				border: none
+				padding: 0
 
 		h3
 			font-size: 22px
@@ -289,7 +292,6 @@
 					border-left: 2px solid $green
 					border-bottom: 2px solid $green
 					transform: translate(0, -3px) rotate(-45deg)
-
 
 			&:last-child
 				margin-bottom: 0
@@ -355,7 +357,7 @@
 
 				&:hover,
 				&:focus
-					background-color: $accent
+					background-color: $accent !important
 					color: #fff
 
 		&__student
@@ -597,15 +599,20 @@
 					width: 40px
 					height: 40px
 
-		&--materials__user
-			padding: 10px
+		&--materials
+			&__user
+				padding: 10px
 
-			&_name
-				font-size: 18px
-				margin-bottom: 5px
+				&_name
+					font-size: 18px
+					margin-bottom: 5px
 
-			&_dog
-				margin-bottom: 5px
+				&_dog
+					margin-bottom: 5px
+
+			&__content_edit
+				top: 3px
+				right: 3px
 
 
 @media only screen and (max-width: 992px)

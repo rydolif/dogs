@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Войти</title>
+	<title>Учитель (Создать Новый курс)</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -41,6 +41,12 @@
 					</li>
 					<li><span></span></li>
 					<li><a href="#">Мои курсы</a></li>
+					<li>
+						<a href="#" class="header__nav_logout">
+							<svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.4"><rect x="5.25684" y="6" width="7.99995" height="2" fill="#1D2025"/><path d="M12.2568 11V3L16.2568 7L12.2568 11Z" fill="#1D2025"/><rect x="0.256836" width="8.99996" height="2" fill="#1D2025"/><rect x="0.256836" y="12" width="8.99996" height="2" fill="#1D2025"/><rect x="0.256836" width="2.00002" height="14" fill="#1D2025"/></g>
+							</svg>
+						</a>
+					</li>
 				</ul>
 			</nav>
 
@@ -56,61 +62,126 @@
 				</div>
 			</div>
 
+			
 		</div>
 	</header>
+		
+	<div class="teacher__nav">
 
-	<main class="main">
+		<button class="teacher__hamburger" type="button">
+			<span class="teacher__hamburger_item"></span>
+		</button>
 
-		<section class="login">
-			<div class="container">
-
-				<div class="login__list">
-					<a href="main.html" class="btn">Главная</a>
-					<a href="login.html" class="btn">Вход</a>
-				</div>
-
-				<div class="login__list">
-					<h3>Курсы</h3>
-					<a href="courses.html" class="btn">Учитесь онлайн с Фандогс!</a>
-					<a href="courses-future.html" class="btn">Профи — магистратура</a>
-					<a href="courses-online.html" class="btn">Прогулки без проблем!</a>
-					<a href="courses-record.html" class="btn">Секреты мотивации</a>
-					<a href="courses-start.html" class="btn">Базовый курс — продвинутый</a>
-					<a href="feedback.html" class="btn">Отзывы и результаты наших учеников</a>
-				</div>
-
-				<div class="login__list">
-					<h3>Профиль</h3>
-					<a href="student.html" class="btn">Профиль студента</a>
-					<a href="student-info.html" class="btn">Информация о студенте</a>
-					<a href="student-edit.html" class="btn">Изменение профиля</a>
-					<a href="student-edit-2.html" class="btn">Изменение профиля (Мои собаки добавить)</a>
-					<a href="student-zero.html" class="btn">Изменение профиля (Пустой профиль)</a>
-					<a href="student-zero-courses.html" class="btn">Изменение профиля (Нет курсов)</a>
-					<a href="student-materials.html" class="btn">Базовый курс — продвинутый №8</a>
-					<a href="student-webinar.html" class="btn">Базовый курс (Вебинар)</a>
-					<a href="student-members-view.html" class="btn">Базовый курс (Профиль)</a>
-					<a href="student-reviews.html" class="btn">Базовый курс (Отзывы)</a>
-				</div>
-
-				<div class="login__list">
-					<h3>Учитель</h3>
-					<a href="teacher-active.html" class="btn">Учитель (Активные курсы)</a>
-					<a href="teacher-edit.html" class="btn">Учитель (Редактировать курс)</a>
-					<a href="teacher-archive.html" class="btn">Учитель (Архив)</a>
-					<a href="teacher-materials.html" class="btn">Учитель (Материалы)</a>
-					<a href="teacher-materials-list.html" class="btn">Учитель (Материалы -> Загруженные задания)</a>
-					<a href="teacher-webinar.html" class="btn">Учитель (Вебинар)</a>
-					<a href="teacher-templates.html" class="btn">Учитель (Шаблоны курсов)</a> 
-					<a href="teacher-templates-materials.html" class="btn">Учитель (Шаблон | Базовый курс — продвинутый)</a> 
-					<a href="teacher-create.html" class="btn">Учитель (Создать Новый курс)</a> 
-				</div>
-				
+		<div class="teacher__nav_header">
+			<div class="avatar teacher__nav_header--avatar">
+				<img src="img/start/avatar12.png" alt="">
 			</div>
-		</section>
-
+			<p>Мария Фандеева</p>
+			<b>Тренер</b>
+		</div>
+		<ul class="teacher__nav_list">
+			<li>
+				<a href="teacher-active.html">Активные курсы <span>127</span></a>
+			</li>
+			<li>
+				<a href="teacher-archive.html">Архив курсов</a>
+			</li>
+			<li>
+				<a href="#">Шаблоны курсов</a>
+			</li>
+			<li>
+				<a href="#">Участники</a>
+			</li>
+			<li>
+				<a href="#">Отзывы <span>2</span></a>
+			</li>
+		</ul>
 	</div>
 
+	<main class="main teacher--active">
+		<div class="teacher__container container">
+
+			<ul class="courses-hero__grums">
+				<li><a href="#">Активные курсы </a></li>
+				<li>/</li>
+			</ul>
+
+			<div class="teacher--active__header">
+				<h2>Новый курс</h2>
+			</div>
+
+			<form class="teacher--edit student--edit student--edit__form student--info__nav">
+				<div class="modal__line">
+					<select name="sex" id="">
+						<option value="">Шаблон</option>
+						<option value="">Шаблон 1</option>
+						<option value="">Шаблон 2</option>
+						<option value="">Шаблон 3</option>
+					</select>
+					<label for="name" class="label">Использовать шаблон</label>
+				</div>
+				<div class="modal__line">
+					<input type="text" name="name" id="name" placeholder=" ">
+					<label for="name" class="label">Название</label>
+				</div>
+				<div class="modal__line">
+					<input type="text" name="start" id="start" placeholder=" ">
+					<label for="start" class="label">Старт курса</label>
+				</div>
+				<div class="modal__line">
+					<input type="text" name="link" id="link" placeholder=" ">
+					<label for="link" class="label">Ссылка на подробное описание</label>
+				</div>
+				<div class="modal__line">
+					<input type="text" name="vk" id="vk" placeholder=" ">
+					<label for="vk" class="label">Группа курса Вконтакте</label>
+				</div>
+
+				<h3>Программа курса</h3>
+
+				<div class="modal__line">
+					<input type="text" name="themes1" id="themes1" placeholder=" ">
+					<label for="themes1" class="label">Тема №1</label>
+				</div>
+				<div class="modal__line">
+					<input type="text" name="themes2" id="themes2" placeholder=" ">
+					<label for="themes2" class="label">Тема №2</label>
+					<div class="teacher--edit__form_wrap">
+						<button class="teacher--edit__form_button teacher--edit__form_button--add">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<button class="teacher--edit__form_button teacher--edit__form_button--delete">
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+				</div>
+				<div class="teacher--edit__form_line modal__line">
+					<select name="sex" id="">
+						<option value="">Вебинар</option>
+						<option value="">Вебинар 1</option>
+						<option value="">Вебинар 2</option>
+						<option value="">Вебинар 3</option>
+					</select>
+					<label for="" class="label">Название темы</label>
+					<input type="text" name="themes6" id="" placeholder="Название темы">
+					<button class="teacher--edit__form_add">Добавить</button>
+				</div>
+
+				<h3>Участники</h3>
+				<div class="teacher--edit__form_line modal__line">
+					<input type="text" name="add" id="add" placeholder=" " required>
+					<label for="add" class="label">Добавить участника</label>
+					<button class="teacher--edit__form_add">Добавить</button>
+				</div>
+
+				<button class="btn">Создать</button>
+			</form>
+			
+		</div>
 	</main>
 
 	<footer class="footer">
