@@ -1,6 +1,14 @@
 $(function() {
 
-  
+//-------------------------------активна ссилка на якій знаходишся для меню---------------------------------------
+  $('.teacher__nav_list a').each(function () {
+      var location = window.location.href;
+      var link = this.href; 
+      if(location == link) {
+          $(this).addClass('active');
+      }
+  });
+
 //---------------------------tabs mosal-----------------------
   $(".block__content").slideUp("slow");
   // $(".block").first().addClass('active');
@@ -87,6 +95,13 @@ $(function() {
     $('.header__nav').toggleClass('header__nav--active');
     $('.header').toggleClass('header--menu');
     $('body').toggleClass('no-scroll');
+  });
+
+//------------------------------гамбургер-teacher----------------------------
+  $('.teacher__hamburger').click(function() {
+    $(this).toggleClass('teacher__hamburger--active');
+    $('.teacher__nav').toggleClass('teacher__nav--active');
+    $('.header').toggleClass('header--menu');
   });
 
 });
