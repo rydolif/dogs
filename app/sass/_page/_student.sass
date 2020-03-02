@@ -515,6 +515,108 @@
 			margin-bottom: 55px
 			padding-top: 0
 
+			label
+				margin-bottom: 0
+				font-size: 16px
+				transition: all .6s
+
+			label, input 
+				transition: all 0.2s
+				touch-action: manipulation
+
+			input:placeholder-shown + label
+				cursor: text
+				white-space: nowrap
+				overflow: hidden
+				text-overflow: ellipsis
+				transform-origin: left bottom
+				transform: translate(0, -2em)
+
+			::-webkit-input-placeholder
+				opacity: 0
+				transition: inherit
+
+			input:focus::-webkit-input-placeholder
+				opacity: 1
+
+			input:not(:placeholder-shown) + label,
+			input:focus + label
+				transform: translate(0, -5em)
+				cursor: pointer
+				font-size: 12px
+
+			label, textarea 
+				transition: all 0.2s
+				touch-action: manipulation
+
+			textarea:placeholder-shown + label
+				cursor: text
+				white-space: nowrap
+				overflow: hidden
+				text-overflow: ellipsis
+				transform-origin: left bottom
+				transform: translate(0, -2em)
+
+			::-webkit-textarea-placeholder
+				opacity: 0
+				transition: inherit
+
+			textarea:focus::-webkit-textarea-placeholder
+				opacity: 1
+
+			textarea:not(:placeholder-shown) + label,
+			textarea:focus + label
+				transform: translate(0, -5em)
+				cursor: pointer
+				font-size: 12px
+
+			label, select 
+				transition: all 0.2s
+				touch-action: manipulation
+
+			select:placeholder-shown + label
+				cursor: text
+				white-space: nowrap
+				overflow: hidden
+				text-overflow: ellipsis
+				transform-origin: left bottom
+				transform: translate(0, -2em)
+
+			::-webkit-select-placeholder
+				opacity: 0
+				transition: inherit
+
+			select:focus::-webkit-select-placeholder
+				opacity: 1
+
+			select:not(:placeholder-shown) + label,
+			select:focus + label
+				transform: translate(0, -5em)
+				cursor: pointer
+				font-size: 12px
+
+			.label
+				position: absolute
+				left: 0
+				top: 40px
+				color: rgba($text, .4)
+
+			textarea
+				height: 160px
+
+			.modal__line
+				position: relative
+				margin-bottom: 40px
+
+			div
+				&:last-child
+					margin-bottom: 0
+
+			.btn
+				height: 32px
+				font-size: 12px
+				padding: 0 25px
+				
 		h2
 			font-weight: 700
 			display: block
@@ -580,107 +682,6 @@
 				&:last-child
 					margin-right: 0
 
-		label
-			margin-bottom: 0
-			font-size: 16px
-			transition: all .6s
-
-		label, input 
-			transition: all 0.2s
-			touch-action: manipulation
-
-		input:placeholder-shown + label
-			cursor: text
-			white-space: nowrap
-			overflow: hidden
-			text-overflow: ellipsis
-			transform-origin: left bottom
-			transform: translate(0, -2em)
-
-		::-webkit-input-placeholder
-			opacity: 0
-			transition: inherit
-
-		input:focus::-webkit-input-placeholder
-			opacity: 1
-
-		input:not(:placeholder-shown) + label,
-		input:focus + label
-			transform: translate(0, -5em)
-			cursor: pointer
-			font-size: 12px
-
-		label, textarea 
-			transition: all 0.2s
-			touch-action: manipulation
-
-		textarea:placeholder-shown + label
-			cursor: text
-			white-space: nowrap
-			overflow: hidden
-			text-overflow: ellipsis
-			transform-origin: left bottom
-			transform: translate(0, -2em)
-
-		::-webkit-textarea-placeholder
-			opacity: 0
-			transition: inherit
-
-		textarea:focus::-webkit-textarea-placeholder
-			opacity: 1
-
-		textarea:not(:placeholder-shown) + label,
-		textarea:focus + label
-			transform: translate(0, -5em)
-			cursor: pointer
-			font-size: 12px
-
-		label, select 
-			transition: all 0.2s
-			touch-action: manipulation
-
-		select:placeholder-shown + label
-			cursor: text
-			white-space: nowrap
-			overflow: hidden
-			text-overflow: ellipsis
-			transform-origin: left bottom
-			transform: translate(0, -2em)
-
-		::-webkit-select-placeholder
-			opacity: 0
-			transition: inherit
-
-		select:focus::-webkit-select-placeholder
-			opacity: 1
-
-		select:not(:placeholder-shown) + label,
-		select:focus + label
-			transform: translate(0, -5em)
-			cursor: pointer
-			font-size: 12px
-
-		.label
-			position: absolute
-			left: 0
-			top: 40px
-			color: rgba($text, .4)
-
-		textarea
-			height: 160px
-
-		.modal__line
-			position: relative
-			margin-bottom: 40px
-
-		div
-			&:last-child
-				margin-bottom: 0
-
-		.btn
-			height: 32px
-			font-size: 12px
-			padding: 0 25px
 
 		&__delet
 			display: flex
@@ -909,7 +910,6 @@
 					padding: 20px 30px
 					border-top: 1px solid rgba($text, .1)
 
-
 		&__theme
 
 			&_form
@@ -1099,7 +1099,7 @@
 				h4
 					font-size: 22px
 					font-weight: 400
-					margin-bottom: 15px
+					margin-bottom: 20px
 
 				p, ul
 					margin-bottom: 15px

@@ -1,10 +1,6 @@
 
 .teacher
 
-	&__container
-		max-width: 1130px
-		margin-left: 400px
-
 	&__nav
 		background-color: #dfdede
 		position: absolute
@@ -133,6 +129,12 @@
 		flex-wrap: wrap
 		padding: 100px 0
 		background-color: #f4f3f3
+
+		&__toggle
+			display: flex
+
+			time
+				margin-right: 7px
 
 		h2
 			font-weight: 700
@@ -273,6 +275,22 @@
 		&__form
 			width: 100%
 
+			&_saved
+				position: absolute
+				right: 0
+				bottom: 102%
+				font-size: 12px
+
+				span
+					display: inline-block
+					width: 14px
+					height: 5px
+					margin-right: 10px
+					border-left: 2px solid $green
+					border-bottom: 2px solid $green
+					transform: translate(0, -3px) rotate(-45deg)
+
+
 			&:last-child
 				margin-bottom: 0
 
@@ -363,7 +381,157 @@
 			a
 				color: #918487
 
+	&--materials
 
+		&__content
+			position: relative
+
+			&_edit
+				position: absolute
+				top: 15px
+				right: 15px
+				display: flex
+				align-items: center
+				line-height: 1
+
+				button
+					background-color: transparent
+					border: none
+					display: flex
+					align-items: center
+					color: $accent
+
+					&:hover,
+					&:focus
+						color: $accent--hover
+
+				svg
+					opacity: .2
+					margin-right: 8px
+			
+			&--blue
+				button
+					color: #fff !important
+
+				svg, g, path
+					fill: #fff
+					opacity: .8
+		
+		&__pagination
+			display: flex
+			align-items: center
+			margin-bottom: 40px
+			font-size: 12px
+
+			a
+				display: block
+				color: #918487
+
+			&_arrow
+				margin-right: 50px
+
+				&--right
+					margin:
+						left: 25px
+						right: 45px
+
+				&--left
+					margin-right: 25px
+
+
+			&_number
+				color: #DBD3D2
+
+				span
+					color: $text
+		
+		&__info
+			display: flex
+			justify-content: space-between
+			align-items: center
+			flex-wrap: wrap
+			margin-bottom: 25px
+
+			h4
+				font-size: 22px
+				font-weight: 400
+
+			div
+				display: flex
+				align-items: center
+
+			span
+				display: inline-block
+				color: #fff
+				border-radius: 20px
+				background-color: $blue
+				padding: 4px 18px
+				margin-left: 15px
+
+		&__list
+
+			&_title
+				margin-bottom: 20px
+
+		&__user
+			display: flex
+			justify-content: space-between
+			padding: 20px
+			border-top: 1px solid rgba($text, .1)
+
+			&_wrap
+				display: flex
+
+			&_avatar
+				width: 65px
+				height: 65px
+				margin-right: 25px
+
+			&_name
+				font-size: 22px
+				line-height: 1
+				font-weight: 500
+				margin-bottom: 10px
+
+			&_dog
+				font-size: 12px
+				color: #918487
+				margin-bottom: 15px
+
+			&_comment
+				font-size: 12px
+
+				span
+					color: #fff
+					background-color: $accent
+					padding: 0 8px
+					border-radius: 10px
+					line-height: 1
+					margin-left: 5px
+
+			&_rating
+				min-width: 100px
+
+				span
+					color: #fff
+					background-color: $blue
+					border-radius: 20px
+					padding: 4px 10px
+					margin-left: 5px
+
+
+
+@media only screen and (max-width: 1850px)
+	.teacher
+
+		&__container
+			max-width: 1130px
+			margin-left: 400px
+
+		&--active
+
+			.student--materials__theme_item-wrap
+				width: 89%
 
 
 @media only screen and (max-width: 1350px)
@@ -395,6 +563,18 @@
 				&--avatar
 					width: 40px
 					height: 40px
+
+		&--materials__user
+			padding: 10px
+
+			&_name
+				font-size: 18px
+				margin-bottom: 5px
+
+			&_dog
+				margin-bottom: 5px
+
+
 
 @media only screen and (max-width: 992px)
 	.teacher
@@ -483,6 +663,19 @@
 					&--add
 						margin-right: 10px
 
+		&--materials
+			&__pagination
+				margin-bottom: 15px
+
+			&__info
+				margin-bottom: 15px
+
+				h4
+					font-size: 16px
+
+				span
+					margin-left: 5px
+
 
 @media only screen and (max-width: 578px)
 	.teacher
@@ -526,3 +719,11 @@
 
 			&__form
 				padding-top: 0
+
+		&--materials__user
+			padding: 5px
+
+			&_name
+				font-size: 16px
+
+			&_
