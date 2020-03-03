@@ -1,5 +1,95 @@
 
 .teacher
+	
+	&--rating
+		position: relative
+		display: flex
+		align-items: center
+		z-index: 1001
+
+		b
+			margin-left: 10px
+
+		&:hover,
+		&:focus
+			.teacher--rating__form
+				display: block
+
+		&__form
+			position: absolute
+			right: 0
+			top: 80%
+			padding: 25px
+			background-color: #fff
+			border: 2px solid #DBD3D2
+			display: none
+
+			&::before,
+			&::after
+				content: ''
+				position: absolute
+				display: block
+
+			&::after
+				background-color: #fff
+				z-index: 1
+				top: -2px
+				width: 13px
+				height: 13px
+				right: 61px
+				border-radius: 1px
+
+			&::before
+				right: 60px
+				top: -8px
+				border: 2px solid #C4C4C4
+				z-index: -1
+				background-color: #fff
+				transform: rotate(-45deg)
+				width: 15px
+				height: 15px
+
+			ul
+				display: flex
+				justify-content: space-between
+				align-items: center
+			
+			li
+				margin-right: 8px
+
+				&:last-child
+					margin-right: 0
+
+			.radio
+				position: relative
+				display: flex
+				justify-content: center
+				align-items: center
+				cursor: pointer
+				margin-bottom: 0
+				margin-right: 0
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				transition: all .6s
+				border: 1px solid #DBD3D2
+				font-size: 12px
+				font-weight: 600
+
+				&:hover,
+				&:focus
+					border: 1px solid $blue
+
+			input[type="radio"]
+				display: none
+
+			input[type="radio"]:checked + label
+				background-color: $blue
+				border: 1px solid $blue
+				color: #fff
+					
+			input[type="radio"] + label::after
+				background-color: #fff
 
 	&__wrap
 		display: flex
@@ -456,9 +546,11 @@
 		&__info
 			display: flex
 			justify-content: space-between
-			align-items: center
 			flex-wrap: wrap
-			margin-bottom: 25px
+			align-items: center
+
+			div
+				padding-bottom: 25px
 
 			h4
 				font-size: 22px
@@ -848,13 +940,20 @@
 				margin-bottom: 15px
 
 			&__info
-				margin-bottom: 15px
+				justify-content: space-around
 
 				h4
 					font-size: 16px
 
 				span
 					margin-left: 5px
+
+		&--rating__form
+			padding: 10px
+
+			.radio
+				width: 30px
+				height: 30px
 
 
 @media only screen and (max-width: 578px)
@@ -909,3 +1008,29 @@
 		&--members__item
 			max-width: 100%
 
+
+		&--rating__form
+			padding: 5px
+			left: 50%
+			right: auto
+			transform: translate(-50%, 0)
+
+			&::before,
+			&::after
+				right: auto
+				left: 50%
+
+			&::after
+				transform: translate(-50%, 0)
+				width: 15px
+				height: 15px
+
+			&::before
+				transform: translate(-50%, 0) rotate(-45deg)
+
+			li
+				margin-right: 5px
+
+			.radio
+				width: 25px
+				height: 25px
