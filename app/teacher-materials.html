@@ -218,10 +218,10 @@
 					</ul>
 
 					<div id="one" class="tabs__wrap">
-						<a href="#" class="btn btn--transparent btn--full">Добавить запись</a>
+						<a href="#" class="btn btn--transparent btn--full new-post_open">Добавить запись</a>
 						<div class="teacher--materials__content student--materials__content_wrap">
 							<div class="teacher--materials__content_edit">
-								<button class="teacher--materials__content_edit--edit">
+								<button class="teacher--materials__content_edit--edit edit-post_open">
 									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2"><path d="M8.21312 4.15088L11.7485 7.68628L6.59228 12.8428L1.99609 13.9033L3.05663 9.30712L8.21312 4.15088ZM10.8348 1.52905L9.42065 2.94335L12.9562 6.47875L14.3704 5.06445L10.8348 1.52905Z" fill="#1D2025"/></g></svg>
 									Изменить
 								</button>
@@ -246,7 +246,7 @@
 						</div>
 						<div class="teacher--materials__content teacher--materials__content--blue student--materials__content_wrap student--materials__content_wrap--blue">
 							<div class="teacher--materials__content_edit">
-								<button class="teacher--materials__content_edit--edit">
+								<button class="teacher--materials__content_edit--edit edit-post_open">
 									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2"><path d="M8.21312 4.15088L11.7485 7.68628L6.59228 12.8428L1.99609 13.9033L3.05663 9.30712L8.21312 4.15088ZM10.8348 1.52905L9.42065 2.94335L12.9562 6.47875L14.3704 5.06445L10.8348 1.52905Z" fill="#1D2025"/></g></svg>
 									Изменить
 								</button>
@@ -271,7 +271,7 @@
 						</div>
 						<div class="teacher--materials__content student--materials__content_wrap">
 							<div class=" teacher--materials__content_edit">
-								<button class="teacher--materials__content_edit--edit">
+								<button class="teacher--materials__content_edit--edit edit-post_open">
 									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2"><path d="M8.21312 4.15088L11.7485 7.68628L6.59228 12.8428L1.99609 13.9033L3.05663 9.30712L8.21312 4.15088ZM10.8348 1.52905L9.42065 2.94335L12.9562 6.47875L14.3704 5.06445L10.8348 1.52905Z" fill="#1D2025"/></g></svg>
 									Изменить
 								</button>
@@ -778,6 +778,160 @@
     
 		</div>
 	</footer>
+
+	<div class="modal" id="new-post">
+
+		<button class="modal__close new-post_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal__from tabs form">
+			<div class="modal__header">
+				<h3>Новый материал</h3>
+			</div>
+
+			<form method="post" class="modal__form">
+				<div class="modal__color">
+					<p>Цвет фона</p>
+					<ul>
+						<li>
+							<input type="radio" name="color" id="white">
+							<label for="white" class="radio radio--white"></label>
+						</li>
+						<li>
+							<input type="radio" name="color" id="blue">
+							<label for="blue" class="radio radio--blue"></label>
+						</li>
+						<li>
+							<input type="radio" name="color" id="red">
+							<label for="red" class="radio radio--red"></label>
+						</li>
+						<li>
+							<input type="radio" name="color" id="black">
+							<label for="black" class="radio radio--black"></label>
+						</li>
+						<li>
+							<input type="radio" name="color" id="green">
+							<label for="green" class="radio radio--green"></label>
+						</li>
+						<li>
+							<input type="radio" name="color" id="orange">
+							<label for="orange" class="radio radio--orange"></label>
+						</li>
+					</ul>
+				</div>
+				<div class="modal__label">
+					<input type="text" name="title" id="title" required placeholder=" ">
+					<label for="title" class="label">Заголовок</label>
+				</div>
+				<div class="modal__label">
+					<textarea name="textarea" id="textarea" required placeholder=" "></textarea>
+					<label for="textarea" class="label">Текст</label>
+				</div>
+
+				<h3 class="modal__sub-title">Вложения</h3>
+
+				<div class="modal__label student--edit__delet">
+					<input type="text" name="link" id="link" required placeholder=" ">
+					<label for="link" class="label">Ссылка на фото или видео</label>
+					<button>Прикрепить</button>
+				</div>
+
+				<div class="modal__file">
+					<input name="picture" type="file" id="file" />
+					<label for="file" class="">или <span>выберите файл на компьютер</span>е</label>
+				</div>
+
+				<div class="modal__btn">
+					<button type="submit" class="btn" name="submit">Добавить</button>
+					<button type="submit" class="btn btn--transparent btn--no-border" name="submit">Отмена</button>
+				</div>
+			</form>
+
+		</div>
+	</div>
+
+	<div class="modal" id="edit-post">
+
+		<button class="modal__close edit-post_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="modal__from tabs form">
+			<div class="modal__header">
+				<h3>Изменение материала</h3>
+			</div>
+
+			<form method="post" class="modal__form">
+				<div class="modal__color">
+					<p>Цвет фона</p>
+					<ul>
+						<li>
+							<input type="radio" name="color" id="white">
+							<label for="white" class="radio radio--white"></label>
+						</li>
+						<li>
+							<input type="radio" name="color" id="blue">
+							<label for="blue" class="radio radio--blue"></label>
+						</li>
+						<li>
+							<input type="radio" name="color" id="red">
+							<label for="red" class="radio radio--red"></label>
+						</li>
+						<li>
+							<input type="radio" name="color" id="black">
+							<label for="black" class="radio radio--black"></label>
+						</li>
+						<li>
+							<input type="radio" name="color" id="green">
+							<label for="green" class="radio radio--green"></label>
+						</li>
+						<li>
+							<input type="radio" name="color" id="orange">
+							<label for="orange" class="radio radio--orange"></label>
+						</li>
+					</ul>
+				</div>
+				<div class="modal__label">
+					<input type="text" name="title" id="title" required placeholder=" ">
+					<label for="title" class="label">Заголовок</label>
+				</div>
+				<div class="modal__label">
+					<textarea name="textarea" id="textarea" required placeholder=" "></textarea>
+					<label for="textarea" class="label">Текст</label>
+				</div>
+
+				<h3 class="modal__sub-title">Вложения</h3>
+
+				<div class="modal__img">
+					<img src="img/timetable.jpg" alt="">
+					<button>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+
+				<div class="modal__label student--edit__delet">
+					<input type="text" name="link" id="link" required placeholder=" ">
+					<label for="link" class="label">Ссылка на фото или видео</label>
+					<button>Прикрепить</button>
+				</div>
+
+				<div class="modal__file">
+					<input name="picture" type="file" id="file" />
+					<label for="file" class="">или <span>выберите файл на компьютер</span>е</label>
+				</div>
+
+				<div class="modal__btn">
+					<button type="submit" class="btn" name="submit">Сохранить</button>
+					<button type="submit" class="btn btn--transparent btn--no-border" name="submit">Отмена</button>
+				</div>
+			</form>
+
+		</div>
+	</div>
 
 	<script src="js/scripts.min.js"></script>
 

@@ -737,6 +737,68 @@ input[type="checkbox"]:checked + label
 input[type="checkbox"] + label::after
 	left: 4px
 
+.radio
+	position: relative
+	cursor: pointer
+	margin-bottom: 0
+	margin-right: 0
+	width: 40px
+	height: 40px
+	transition: all .6s
+	border: 1px solid transparent
+
+	&::after
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		width: 18px
+		height: 7px
+		transition: all .6s
+		border-bottom: 2px solid #fff
+		border-left: 2px solid #fff
+		transform: translate(-50%, -70%) rotate(-45deg)
+		opacity: 0
+
+	&:hover,
+	&:focus
+		
+
+	&--white
+		background-color: #fff
+		border: 1px solid #DBD3D2
+
+		&::after
+			border-bottom: 2px solid $text
+			border-left: 2px solid $text
+
+	&--blue
+		background-color: $blue
+
+	&--red
+		background-color: $accent
+
+	&--black
+		background-color: $text
+
+	&--green
+		background-color: $green
+
+	&--orange
+		background-color: $orange
+
+
+input[type="radio"]
+	display: none
+
+input[type="radio"]:checked + label
+
+	&::after
+		opacity: 1
+		
+input[type="radio"] + label::after
+	left: 50%
+
 
 
 //-----------page--------------

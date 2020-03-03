@@ -115,6 +115,32 @@
 				img
 					transform: scale(.9)
 	
+	&__color
+		color: #918487
+		margin-bottom: 40px
+
+		p
+			margin-bottom: 10px
+
+		ul
+			display: flex
+			flex-wrap: wrap
+
+		li
+			margin-right: 10px
+
+			&:last-child
+				margin-right: 0
+
+		img
+			transition: all .6s
+
+		a
+			&:hover,
+			&:focus
+				img
+					transform: scale(.9)
+	
 	&--task
 		max-width: 890px
 		background-color: #f4f3f3
@@ -174,6 +200,157 @@
 			height: 6px
 			border-bottom: 1px solid $green
 			border-left: 1px solid $green
+
+	&__label
+		position: relative
+		margin-bottom: 35px
+
+		input, textarea
+			width: 100%
+
+		textarea
+			height: 120px
+
+		label
+			margin-bottom: 0
+			font-size: 16px
+			transition: all .6s
+			color: #918487
+
+		label, input 
+			transition: all 0.2s
+			touch-action: manipulation
+
+		input:placeholder-shown + label
+			cursor: text
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+			transform-origin: left bottom
+			transform: translate(0, -2em)
+
+		::-webkit-input-placeholder
+			opacity: 0
+			transition: inherit
+
+		input:focus::-webkit-input-placeholder
+			opacity: 1
+
+		input:not(:placeholder-shown) + label,
+		input:focus + label
+			transform: translate(0, -5em)
+			cursor: pointer
+			font-size: 12px
+
+		label, textarea 
+			transition: all 0.2s
+			touch-action: manipulation
+
+		textarea:placeholder-shown + label
+			cursor: text
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+			transform-origin: left bottom
+			transform: translate(0, -2em)
+
+		::-webkit-textarea-placeholder
+			opacity: 0
+			transition: inherit
+
+		textarea:focus::-webkit-textarea-placeholder
+			opacity: 1
+
+		textarea:not(:placeholder-shown) + label,
+		textarea:focus + label
+			transform: translate(0, -5em)
+			cursor: pointer
+			font-size: 12px
+
+		.label
+			position: absolute
+			left: 0
+			top: 40px
+			color: rgba($text, .4)
+	
+	&__sub-title
+		font-size: 22px
+		font-weight: 500
+		margin-bottom: 30px
+
+	&__file
+		margin-bottom: 35px
+
+		input
+			display: none
+
+		label
+			font-size: 16px
+			cursor: pointer
+
+			&:hover,
+			&:focus
+				color: $accent--hover
+
+		span
+			color: $accent
+	
+	&__img
+		position: relative
+		width: 245px
+		height: 245px
+		border: 1px solid #DBD3D2
+		margin-bottom: 30px
+
+		button
+			position: absolute
+			top: 0
+			right: 0
+			border: none
+			background-color: rgba($text, .4)
+			width: 32px
+			height: 32px
+			padding: 0
+
+			&:hover,
+			&:focus
+				span
+					background-color: $accent
+
+			span
+				display: block
+				position: absolute
+				top: 50%
+				left: 50%
+				background-color: #fff
+				width: 15px
+				height: 2px
+				transition: all .6s
+
+				&:first-child
+					transform: translate(-50%, -50%) rotate(-45deg)
+
+				&:last-child
+					transform: translate(-50%, -50%) rotate(45deg)
+
+		img
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			width: 100%
+			height: auto
+
+	&__btn
+		display: flex
+		flex-wrap: wrap
+
+		.btn
+			margin-right: 10px
+
+			&:last-child
+				margin-right: 0
+
 
 
 .popup_visible .modal
