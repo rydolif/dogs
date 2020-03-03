@@ -755,8 +755,6 @@
 						padding: 5px 6px 3px 6px
 						background-color: $blue
 
-
-
 .check
 	display: block
 	margin: 0 auto
@@ -843,7 +841,7 @@
 					padding: 10px
 		
 		&--active
-			padding-top: 80px
+			padding-top: 110px
 
 			&__header
 				a
@@ -915,6 +913,7 @@
 
 		&__hamburger
 			display: flex
+			top: 90px
 
 			&--active
 				left: 230px
@@ -955,6 +954,9 @@
 				width: 30px
 				height: 30px
 
+		&--active h2
+			margin-bottom: 0 !important
+
 
 @media only screen and (max-width: 578px)
 	.teacher
@@ -988,6 +990,12 @@
 
 @media only screen and (max-width: 480px)
 	.teacher
+		&__hamburger
+			top: 70px
+
+		&--active
+			padding-top: 90px
+
 		&--edit
 			padding: 0
 
@@ -1034,3 +1042,7 @@
 			.radio
 				width: 25px
 				height: 25px
+
+
+
+
