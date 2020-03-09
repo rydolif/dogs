@@ -32,7 +32,7 @@ gulp.task('styles', function() {
 		outputStyle: 'expanded',
 		includePaths: [__dirname + '/node_modules']
 	}))
-	.pipe(concat('styles.min.css'))
+	.pipe(concat('styles.css'))
 	.pipe(autoprefixer({
 		// grid: true, // Optional. Enable CSS Grid
 		overrideBrowserslist: ['last 10 versions']
